@@ -1,0 +1,60 @@
+// <script>
+// import * as d3 from "d3";
+// import { Deck } from "@deck.gl/core";
+// import { IconLayer } from "@deck.gl/layers";
+// import { ref, onMounted, reactive } from "vue";
+// import { useMap } from "../../../../store/map";
+// import mapboxgl from "mapbox-gl";
+
+// export default {
+//   name: "Map",
+//   props: {
+//     clusterData: Array,
+//     zoom: Number,
+//   },
+//   setup(props) {
+//     let mapStore = useMap();
+//     const map = ref(null);
+//     const canvas = ref(null)
+
+
+//     function init() {
+//       mapStore.createDeckMapState();
+//       let mapState = mapStore.getMapStateByID(0);
+//       console.log(mapState);
+
+//       const deckMap = new mapboxgl.Map({
+//         container: map.value,
+//         style: mapStore.mapStyle,
+//         interactive: true,
+//         accessToken: mapStore.accessToken,
+//         center: [mapState.viewState.longitude, mapState.viewState.latitude],
+//         zoom: mapState.viewState.zoom,
+//         pitch: mapState.viewState.pitch,
+//         bearing: mapState.viewState.bearing,
+//       });
+
+//       const deckComponent = new Deck({
+//         canvas: canvas.value,
+//         width: "100%",
+//         height: "100%",
+//         initialViewState: mapState.viewState,
+//         controller: true,
+//         onViewStateChange: ({viewState}) => {
+//             console.log("view change", viewState)
+//             deckComponent.setProps({viewState: {...viewState}});
+//         },
+//         layers:[]
+//       })
+//     }
+
+//     onMounted(() => {
+//       console.log(map.value)
+//       console.log("canvas element", canvas.value)
+//       init();
+//     });
+
+//     return { mapStore, map, canvas};
+//   },
+// };
+// </script>

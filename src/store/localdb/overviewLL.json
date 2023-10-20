@@ -1,0 +1,115 @@
+[
+    {
+        "icon": "overview",
+        "name": "Overview",
+        "visibility": true,
+        "type": "GeoJSON",
+        "parameters": {
+            "data": "OverviewClusters"
+        },
+        "id":1,
+        "description":"Clusters of Historic Wildfires"
+    },
+    {
+        "icon":"elevation",
+        "name": "Elevation",
+        "visibility": false,
+        "type": "TileLayer",
+        "parameters":{
+           "source": "wmts",
+           "data": "elevation",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/elevation/webmercator"
+        },
+        "id":2,
+        "description": "Represents land height, in meters, above mean sea level."
+    },
+    {
+        "icon":"fbfm40",
+        "name": "fbfm40",
+        "visibility": false,
+        "type": "TileLayer",
+        "parameters":{
+           "source": "wmts",
+           "data": "fbfm40",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/fbfm40/webmercator"
+        },
+        "id":3,
+        "description": "Fire Behavior Fuel Model 40 Attributes"
+    },
+    {
+        "icon":"vegetation",
+        "name": "Vegetation Type",
+        "visibility": false,
+        "type": "TileLayer",
+        "parameters":{
+           "source": "wmts",
+           "data": "evt",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/evt/webmercator"
+        },
+        "id":4,
+        "description": "Complexes of plant communities representing NatureServe's terrestrial Ecological Systems classification."
+    },
+    {
+        "icon":"vegetationHeight",
+        "name": "Vegetation Height",
+        "visibility": false,
+        "type": "TileLayer",
+        "parameters":{
+           "source": "wmts",
+           "data": "evh",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/evh/webmercator"
+        },
+        "id":5,
+        "description": "Average height of the dominant vegetation."
+    },
+    {
+        "icon":"vegetationCover",
+        "name": "Vegetation Cover",
+        "visibility": false,
+        "type": "TileLayer",
+        "parameters":{
+           "source": "wmts",
+           "data": "evc",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/evc/webmercator"
+        },
+        "id":6,
+        "description": "Vertically projected percent cover of the live canopy layer for a specific area."
+    },
+    {
+        "icon":"aspect",
+        "name": "Aspect",
+        "visibility": true,
+        "type": "TileLayer",
+        "parameters":{
+           "source": "wmts",
+           "data": "aspect",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/aspect/webmercator"
+        },
+        "id":8,
+        "description": "Azimuth of the sloped surfaces across a landscape"
+    },
+    {
+        "icon":"slope",
+        "name": "Slope",
+        "visibility": false,
+        "type": "TileLayer",
+        "parameters":{
+           "source": "wmts",
+           "data": "slope",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/slope/webmercator"
+        },
+        "id":9,
+        "description": "Change of elevation over a specific area"
+    },
+    {
+        "icon": "roads",
+        "name": "Selected Fire",
+        "visibility": false,
+        "type": "IconLayer",
+        "parameters": {
+            "data":""
+        },
+        "id": 10,
+        "description": "Location of the current fire selected"
+    }
+]

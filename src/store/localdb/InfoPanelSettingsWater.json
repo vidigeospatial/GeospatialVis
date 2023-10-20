@@ -1,0 +1,132 @@
+[
+    {
+        "type": "text",
+        "id": "Unmet Water Demand",
+        "title": "Unmet Water Demand",
+        "info": "Net delivery - Applied Water Demand (<code>dnTotVar</code> - <code>awVar</code>)<br> Negative values indicate unmet demand",
+        "scales": [
+            {
+                "variable": "in Thousand Acre-Feet (TAF)",
+                "colorRange": [
+                    [
+                        255,
+                        245,
+                        240
+                    ],
+                    [
+                        254,
+                        225,
+                        211
+                    ],
+                    [
+                        253,
+                        196,
+                        173
+                    ],
+                    [
+                        252,
+                        161,
+                        131
+                    ],
+                    [
+                        251,
+                        125,
+                        94
+                    ],
+                    [
+                        246,
+                        87,
+                        63
+                    ],
+                    [
+                        227,
+                        50,
+                        41
+                    ],
+                    [
+                        197,
+                        25,
+                        28
+                    ],
+                    [
+                        159,
+                        14,
+                        21
+                    ],
+                    [
+                        108,
+                        1,
+                        14
+                    ]
+                ],
+                "labels": [
+                    "10",
+                    "-55",
+                    "-120",
+                    "-185",
+                    "-250"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "id": "Difference in Unmet Water Demand",
+        "title": "Difference in Unmet Water Demand",
+        "info": "Comparing unmet water demand between <code>bl_h000</code> and <code>baseline</code> <br> Specifically, for each demand unit, difference is calculated as <code>unmet_demand_bl_h000 - unmet_demand_baseline</code>",
+        "scales": [
+            {
+                "variable": "in Thousand Acre-Feet (TAF)",
+                "colorRange": [
+                    [115, 47, 128],
+                    [154, 109, 170],
+                    [193, 164, 205],
+                    [228, 210, 230],
+                    [239, 240, 239],
+                    [214, 238, 209],
+                    [162, 215, 158],
+                    [92, 173, 101],
+                    [33, 120, 57],
+                    [0, 68, 27]
+                ],
+                "labels": [
+                    "-50",
+                    "-25",
+                    "-0",
+                    "25",
+                    "50"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "id": "Groundwater Data",
+        "title": "Groundwater Data",
+        "info": "Historical Baseline",
+        "scales": [
+            {
+                "variable": "in elevations in feet",
+                "colorRange": [
+                    [227, 238, 249],
+                    [207, 225, 242],
+                    [181, 212, 233],
+                    [147, 195, 223],
+                    [109, 174, 213],
+                    [75, 151, 201],
+                    [47, 126, 188],
+                    [24, 100, 170],
+                    [10, 74, 144],
+                    [8, 48, 107]
+                ],
+                "labels": [
+                    "-250",
+                    "-12.5",
+                    "225",
+                    "462.5",
+                    "700"
+                ]
+            }
+        ]
+    }
+]

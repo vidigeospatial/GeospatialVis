@@ -1,0 +1,265 @@
+import { defineStore } from 'pinia'
+import fireListData from "../assets/data/fireList_after_modify.json"
+import axios from "axios"
+import * as perimeterData from '../assets/data/test_perimeter.json';
+
+const config = {
+    headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+    }
+}
+
+//In the pineapple world parameters are not ok O__O
+
+export const useWildfireList = defineStore('wildfireList', {
+    state: () => ({
+        flat_file_list: fireListData['data']['fire'],
+        api_list: [],
+        loading: true,
+        fire: undefined,
+        fireList: [],
+        isFireListReady: false,
+        perimeters: {
+            "map-1": []
+        },
+        isPerimeterDataReady: false
+    }),
+    getters: {
+        getWildFiresYearRange() {
+            return [... new Set(this.fireList.map(wildfire => {
+                return (wildfire.fire_year < 1) ?  new Date( wildfire.start_date).getUTCFullYear()  : new Date( wildfire.fire_year , 0).getUTCFullYear()
+            }))]
+        },
+        getWildFiresAcresRange() {
+            return this.fireList.map(wildfire => parseInt(wildfire.acres)) // string -> int
+        },
+        getWildFirePerimeters() {
+            let perimeters = this.fireList.map(wildfire => +wildfire.perimeter_count) //string -> int
+            return perimeters.sort((a, b) => (a > b ? 1 : b > a ? -1 : 0))
+        },
+        getWildfireNames() {
+            return this.fireList.map(wildfire => wildfire.name) //string
+        },
+        getWildFirePrettifyList() {
+            return this.fireList.map((wildfire, index) => {
+                let year = (wildfire.fire_year < 1) ?  new Date( wildfire.start_date).getUTCFullYear()  : new Date( wildfire.fire_year , 0).getUTCFullYear() //(wildfire['fire_year'] == undefined) ? wildfire['start_date'] : wildfire['fire_year']
+                return {
+                    name: wildfire.name,
+                    year: wildfire.fire_year,
+                    acres: parseInt(wildfire.acres),
+                    perimeters: wildfire.perimeter_count,
+                    id: wildfire.id,
+                    key: index
+                }
+            })
+        }
+    },
+    actions: {
+        selectFireChange(selectedFire) {
+            console.log("selected fire change, ", selectedFire)
+            this.fire = selectedFire
+            console.log("selected fire change, ", this.fire)
+
+            this.isPerimeterDataReady = false
+            // this.fetchPerimetersForFire("CA", this.fire.name, this.fire.year)
+            this.fetchPerimetersForFire("CA", this.fire.id)
+
+        },
+        getWildfireByName(name) {
+            return this.fireList.find(wildfire => wildfire.name === name) //string
+        },
+        getWildfiresByYear(year) {
+            return this.fireList.filter(wildfire => wildfire.fire_year === year)
+        },
+        getWildfiresUntilYear(year) {
+            return this.fireList.filter(wildfire => wildfire.fire_year <= year)
+        },
+        getWildfiresByYearAndAcres(year, acresUpperBound) {
+            let wildfires = this.fireList.filter(wildfire => wildfire.fire_year === year)
+            return wildfires.filter(wildfire => {
+                let acres = (isNaN(acres) || acres === null) ? 0 : acres
+                return (wildfire => acres <= acresUpperBound)
+            })
+        },
+        async fetchFireList() {
+            this.isFireListReady = false;
+            try {
+                const data = await axios.post('http://infovis.cs.ucdavis.edu/wildfire/api/firedash/wildfires/list', { state: "CA" }, config)
+                this.fireList = data.data
+                this.isFireListReady = true
+                console.log("Fire List Is Ready")
+            }
+            catch (error) {
+                console.log('error :>> ', error);
+                throw error.message
+            }
+        },
+        async fetchPerimetersForFire(state, fire_id){
+            this.isPerimeterDataReady = false
+            // this.isPerimeterDataReady = true
+            // return;
+
+            try{
+                console.log('Sending post request for: ', fire_id)
+                const data = await axios.post('http://infovis.cs.ucdavis.edu/wildfire/api/firedash/wildfires/perimeters/list', { state: state, fire_id: fire_id}, config)
+                // this.selectedPerimeterData = data.data
+                let parsedPerimeter = []
+                let regex=/\(([^()]*)\)/g
+
+                data.data.forEach((item, index) => {
+                    // let cur_perimeter = item.perimeter.match(regex)
+                    // let centroid = item.centroid.match(regex)
+                    // cur_perimeter = cur_perimeter.map(d=>{
+                    //     d = d.slice(1,-1).split(' ')
+                    //     d[0] = parseFloat(d[0]);
+                    //     d[1] = parseFloat(d[1]);
+                    //     return d
+                    // })
+                    // centroid = centroid[0].slice(1,-1).split(' ')
+                    // centroid[0] = parseFloat(centroid[0]);
+                    // centroid[1] = parseFloat(centroid[1]);
+
+                    // cur_perimeter.push(cur_perimeter[0])
+                    debugger;
+                    parsedPerimeter.push({
+                        // perimeter: cur_perimeter,
+                        perimeter: perimeterData[index],
+                        perimeter_date: item.date,
+                        centroid: item.centroid.coordinates
+                    })
+                })
+                parsedPerimeter = parsedPerimeter.sort((a,b) => a.perimeter_date.localeCompare(b.perimeter_date));
+
+                this.perimeters = {...this.perimeters, [fire_id]: parsedPerimeter}
+                if (data.data.length > 1){
+                    this.isPerimeterDataReady = true
+                    console.log("Perimeters Ready", data.data)
+                } else {
+                    console.log("No perimeter found")
+                }
+            }
+            catch(error){
+                console.log('error :>> ', error);
+                throw error.message
+            }
+        }
+        // async fetchPerimetersForFire(state, fire_name, year){
+        //     this.isPerimeterDataReady = false
+
+        //     try{
+        //         console.log('Sending post request for: ', fire_name)
+        //         const data = await axios.post('http://infovis.cs.ucdavis.edu/wildfire/api/firedash/wildfires/perimeterlist', { state: state, fire_name: fire_name,  year: year}, config)
+        //         debugger;
+        //         // this.selectedPerimeterData = data.data
+        //         let parsedPerimeter = []
+        //         let regex=/\(([^()]*)\)/g
+
+        //         data.data.forEach((item, index) => {
+        //             let cur_perimeter = item.perimeter.match(regex)
+        //             let centroid = item.centroid.match(regex)
+        //             cur_perimeter = cur_perimeter.map(d=>{
+        //                 d = d.slice(1,-1).split(' ')
+        //                 d[0] = parseFloat(d[0]);
+        //                 d[1] = parseFloat(d[1]);
+        //                 return d
+        //             })
+        //             centroid = centroid[0].slice(1,-1).split(' ')
+        //             centroid[0] = parseFloat(centroid[0]);
+        //             centroid[1] = parseFloat(centroid[1]);
+
+        //             cur_perimeter.push(cur_perimeter[0])
+        //             parsedPerimeter.push({
+        //                 perimeter: cur_perimeter,
+        //                 perimeter_date: item.perimeter_date,
+        //                 centroid: centroid
+        //             })
+        //         })
+        //         parsedPerimeter = parsedPerimeter.sort((a,b) => a.perimeter_date.localeCompare(b.perimeter_date));
+
+        //         this.perimeters = {...this.perimeters, [fire_name]: parsedPerimeter}
+        //         if (data.data.length !== 0){
+        //             this.isPerimeterDataReady = true
+        //             console.log("Perimeters Ready", data.data)
+        //         } else {
+        //             console.log("No perimeter found")
+        //         }
+        //     }
+        //     catch(error){
+        //         console.log('error :>> ', error);
+        //         throw error.message
+        //     }
+        // }
+    }
+})
+
+
+
+
+// const state = () => ({
+//     wildfires_ca: fireListData["data"]["fire"],
+//     api_fetched_data: []
+// })
+
+// const getters = {
+//     getWildfireByName: (state) => (name) => {
+//         return state.wildfires_ca.find(wildfire => wildfire.name === name)
+//     },
+//     getWildfiresByYear: (state) => (year) => {
+//         return state.wildfires_ca.filter( wildfire => wildfire.fire_year === year)
+//     },
+//     getWildfiresUntilYear: (state) => (year) => {
+//         return state.wildfires_ca.filter(wildfire => wildfire.fire_year <= year)
+//     },
+//     getWildfiresByYearAndAcres: (state) => (year, acres) =>  {
+//         let wildfires = state.wildfires_ca.filter(wildfire => wildfire.fire_year === year)
+//         return wildfires.filter(wildfire => wildfire.acres <= acres)
+//     },
+//     getWildFiresYearRange: (state) => () => {
+//         return [... new Set(state.wildfires_ca.map(wildfire => wildfire.fire_year))]
+//     },
+//     getWildFiresAcresRange: (state) => () => {
+//         return state.wildfires_ca.map(wildfire => wildfire.acres)
+//     },
+//     getWildFirePerimeters: (state) => () => {
+//         let perimeters = state.wildfires_ca.map(wildfire => wildfire.perimeter_count)
+//         return perimeters.sort((a, b) => (a > b ? 1 : b > a ? -1 : 0))
+//     },
+//     getWildfireNames: (state) => () => {
+//         return state.wildfires_ca.map(wildfire => wildfire.name)
+//     },
+//     getWildFirePrettifyList: (state) => () => {
+//         return state.wildfires_ca.map( (wildfire, index) => ({
+//             name: wildfire.name,
+//             year: wildfire.fire_year,
+//             acres: wildfire.acres,
+//             perimeters: wildfire.perimeter_count,
+//             key: index
+//         }))
+//     }
+// }
+
+// const mutations = {
+//     SAVE_FIRELIST(state, firelist){
+//         state.api_fetched_data = firelist;
+//     }
+// }
+
+// const actions = {
+//     loadFirelist({commit}){
+//         const body = {"state":"CA"}
+//         Vue.axios.post("wildfires/list",body).then(result => {
+//             commit('SAVE_FIRELIST',result.data);
+//         }).catch(error => {
+//             throw new Error(`API ${error}`)
+//         })
+//     }
+// }
+
+// export default {
+//   namespaced: true,
+//   state,
+//   getters,
+//   mutations,
+//   actions
+// }

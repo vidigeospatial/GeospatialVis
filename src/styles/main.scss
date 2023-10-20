@@ -1,0 +1,57 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// @import "animate.css/animate.css";
+@import "primevue/resources/themes/saga-blue/theme.css";
+@import "primevue/resources/primevue.min.css";
+@import "primeicons/primeicons.css";
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+
+
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #fcfdff;
+  text-decoration: none;
+  background-color: #358be0;
+}
+
+.btn-sm{
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 0.75em;
+}
+
+
+// @import '~bootstrap';
+// @import '~bootstrap-vue';
+
+$font-size: 1rem;
+$font-color: lch(53 105 40);
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+body{
+  overflow: hidden;
+}
+
+:root {
+  --slider-tooltip-bg: #2196F3;
+  --slider-connect-bg: #2196F3;
+
+}
+
+

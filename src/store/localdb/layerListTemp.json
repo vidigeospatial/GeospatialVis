@@ -1,0 +1,15 @@
+[
+    {
+        "image":"fbfm40",
+        "name": "fbfm40",
+        "visibility": true,
+        "parameters":{
+           "type": "TileLayer",
+           "source": "wmts",
+           "data": "fbfm40",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/fbfm40/webmercator"
+        },
+        "id":3,
+        "description": ""
+    }
+]

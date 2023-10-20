@@ -1,0 +1,13 @@
+{  
+    "mapIdentifier": {
+        "Overview": "0",
+        "Single": "1",
+        "ComparisonLeft": "2",
+        "ComparisonRight": "3"
+    },
+    "templateIdentifier": {
+        "Overview": "1",
+        "SingleFire": "2",
+        "FireComparison": "3"
+    }
+}

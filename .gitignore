@@ -4,6 +4,10 @@
 /docker-ql/pythonQL/wildfireAPI/wildfireAPI/__pycache__/*
 /backend/__pycache__/*
 /docker-ql/env
+node_modules/
+dist/
+*/@deprecated/
+
 
 ### venv ###
 # Virtualenv

@@ -1,0 +1,4808 @@
+[
+  {
+    "total_acreage": 347.21383622999997,
+    "total_fires": 3,
+    "county": "Mendocino County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 988.1836596600001,
+    "total_fires": 4,
+    "county": "Mendocino County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 99.34138628999999,
+    "total_fires": 4,
+    "county": "Mendocino County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 855.45245993,
+    "total_fires": 3,
+    "county": "Mendocino County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 1145.01602221,
+    "total_fires": 14,
+    "county": "Mendocino County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 323.71624545,
+    "total_fires": 1,
+    "county": "Mendocino County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 491.12729413,
+    "total_fires": 2,
+    "county": "Mendocino County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 108826.97529623998,
+    "total_fires": 73,
+    "county": "Mendocino County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 17960.64031355,
+    "total_fires": 3,
+    "county": "Mendocino County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 738.96944246,
+    "total_fires": 1,
+    "county": "Mendocino County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 47436.64975183,
+    "total_fires": 3,
+    "county": "Mendocino County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 12938.99168644,
+    "total_fires": 2,
+    "county": "Mendocino County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 326.84857454999997,
+    "total_fires": 4,
+    "county": "Mendocino County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 36542.84472788,
+    "total_fires": 1,
+    "county": "Mendocino County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 1368.58952621,
+    "total_fires": 1,
+    "county": "Mendocino County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 469.48968477,
+    "total_fires": 5,
+    "county": "Trinity County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 1029.52021657,
+    "total_fires": 2,
+    "county": "Trinity County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 5026.75136736,
+    "total_fires": 4,
+    "county": "Trinity County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 471482.9781424301,
+    "total_fires": 125,
+    "county": "Trinity County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 23.54100424,
+    "total_fires": 1,
+    "county": "Trinity County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 3956.5493996,
+    "total_fires": 3,
+    "county": "Trinity County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 131061.26180806999,
+    "total_fires": 11,
+    "county": "Trinity County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 1792.21968946,
+    "total_fires": 3,
+    "county": "Trinity County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 241.56719394,
+    "total_fires": 2,
+    "county": "Trinity County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 7953.1537768,
+    "total_fires": 8,
+    "county": "Trinity County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 1561.0829044900001,
+    "total_fires": 2,
+    "county": "Trinity County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 22.06223663,
+    "total_fires": 2,
+    "county": "Trinity County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 6405.843624419999,
+    "total_fires": 4,
+    "county": "Trinity County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 329567.17213368,
+    "total_fires": 32,
+    "county": "Trinity County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 11545.06135716,
+    "total_fires": 6,
+    "county": "Trinity County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 31.777635580000002,
+    "total_fires": 2,
+    "county": "Trinity County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 44046.61205334,
+    "total_fires": 7,
+    "county": "Trinity County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 3.65,
+    "total_fires": 1,
+    "county": "Trinity County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 3004.96648672,
+    "total_fires": 2,
+    "county": "Trinity County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 360.34941791,
+    "total_fires": 1,
+    "county": "Trinity County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 229.40737237,
+    "total_fires": 1,
+    "county": "Jackson County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 6699.66087054,
+    "total_fires": 3,
+    "county": "Inyo County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 874.94162417,
+    "total_fires": 1,
+    "county": "Inyo County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 5229.348944689999,
+    "total_fires": 2,
+    "county": "Inyo County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 16009.77114416,
+    "total_fires": 6,
+    "county": "Inyo County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 271.68377373,
+    "total_fires": 1,
+    "county": "Inyo County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 16604.3538009,
+    "total_fires": 11,
+    "county": "Inyo County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 37446.39559716,
+    "total_fires": 2,
+    "county": "Inyo County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 4126.4028791,
+    "total_fires": 5,
+    "county": "Inyo County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 7559.477149799999,
+    "total_fires": 5,
+    "county": "Inyo County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 978.83004527,
+    "total_fires": 3,
+    "county": "Inyo County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 1588.05401192,
+    "total_fires": 2,
+    "county": "Inyo County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 127.52215407,
+    "total_fires": 2,
+    "county": "Inyo County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 689.1200000000001,
+    "total_fires": 3,
+    "county": "Inyo County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 1.69797376,
+    "total_fires": 1,
+    "county": "Inyo County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 435.64929788,
+    "total_fires": 3,
+    "county": "Inyo County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 5216.15171233,
+    "total_fires": 2,
+    "county": "Inyo County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 190.20508483,
+    "total_fires": 4,
+    "county": "Inyo County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 10267.6297398,
+    "total_fires": 1,
+    "county": "Inyo County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 4859.85782383,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 753.89473046,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 69.32265052,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 39137.78716923,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 314.02286653,
+    "total_fires": 2,
+    "county": "Napa County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 696.2914972400001,
+    "total_fires": 5,
+    "county": "Napa County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 62534.42179147,
+    "total_fires": 2,
+    "county": "Napa County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 452.81972317,
+    "total_fires": 4,
+    "county": "Napa County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 46.32077792,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 507.80690005,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 578.17329981,
+    "total_fires": 7,
+    "county": "Napa County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 196.72178537,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 4297.34949809,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 2463.1803884,
+    "total_fires": 1,
+    "county": "Napa County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 2126.75957406,
+    "total_fires": 11,
+    "county": "San Luis Obispo County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 3403.15215025,
+    "total_fires": 2,
+    "county": "San Luis Obispo County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 954.7207182899999,
+    "total_fires": 18,
+    "county": "San Luis Obispo County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1468.54582598,
+    "total_fires": 5,
+    "county": "San Luis Obispo County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 2596.72734168,
+    "total_fires": 4,
+    "county": "San Luis Obispo County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 383.71378065,
+    "total_fires": 4,
+    "county": "San Luis Obispo County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 737.3460370999999,
+    "total_fires": 13,
+    "county": "San Luis Obispo County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 4224.75807146,
+    "total_fires": 6,
+    "county": "San Luis Obispo County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 273.80900873,
+    "total_fires": 5,
+    "county": "San Luis Obispo County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 363.23121082,
+    "total_fires": 8,
+    "county": "San Luis Obispo County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 5340.46813228,
+    "total_fires": 8,
+    "county": "San Luis Obispo County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 2300.66583055,
+    "total_fires": 5,
+    "county": "San Luis Obispo County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 3302.0461818299996,
+    "total_fires": 6,
+    "county": "San Luis Obispo County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 4608.10277149,
+    "total_fires": 3,
+    "county": "San Luis Obispo County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 48353.009999999995,
+    "total_fires": 2,
+    "county": "San Luis Obispo County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 1029.6992891599998,
+    "total_fires": 7,
+    "county": "San Luis Obispo County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 1013.32912372,
+    "total_fires": 1,
+    "county": "San Luis Obispo County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 14.87998719,
+    "total_fires": 1,
+    "county": "Douglas County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 38.24451577,
+    "total_fires": 1,
+    "county": "Douglas County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 642.99497683,
+    "total_fires": 1,
+    "county": "Douglas County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 39.38912194,
+    "total_fires": 1,
+    "county": "Douglas County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 222.27740079,
+    "total_fires": 1,
+    "county": "Alpine County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 314.53002273,
+    "total_fires": 1,
+    "county": "Alpine County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 4336.84430872,
+    "total_fires": 1,
+    "county": "Alpine County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 20.16118421,
+    "total_fires": 1,
+    "county": "Alpine County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 28.5043368,
+    "total_fires": 1,
+    "county": "Alpine County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 4394.15267175,
+    "total_fires": 2,
+    "county": "Alpine County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 225.3505447,
+    "total_fires": 5,
+    "county": "Alpine County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 245.19844465,
+    "total_fires": 1,
+    "county": "Alpine County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 653.74,
+    "total_fires": 1,
+    "county": "Alpine County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 1399.62659871,
+    "total_fires": 10,
+    "county": "Fresno County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 2707.9773960999996,
+    "total_fires": 16,
+    "county": "Fresno County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 6749.952509470001,
+    "total_fires": 11,
+    "county": "Fresno County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 1272.09975391,
+    "total_fires": 4,
+    "county": "Fresno County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 777.5107412500001,
+    "total_fires": 11,
+    "county": "Fresno County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 19610.987392559997,
+    "total_fires": 8,
+    "county": "Fresno County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 6395.25604484,
+    "total_fires": 9,
+    "county": "Fresno County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 16722.13483686,
+    "total_fires": 9,
+    "county": "Fresno County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 13261.322720680002,
+    "total_fires": 8,
+    "county": "Fresno County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 247.12777169000003,
+    "total_fires": 6,
+    "county": "Fresno County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 701.17252638,
+    "total_fires": 4,
+    "county": "Fresno County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 9258.95734058,
+    "total_fires": 3,
+    "county": "Fresno County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 151875.80807672002,
+    "total_fires": 3,
+    "county": "Fresno County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 1385.54203666,
+    "total_fires": 3,
+    "county": "Fresno County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 23987.66206354,
+    "total_fires": 7,
+    "county": "Fresno County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 55400.94283705,
+    "total_fires": 8,
+    "county": "Fresno County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 8.09339792,
+    "total_fires": 1,
+    "county": "Fresno County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 15761.810000000001,
+    "total_fires": 6,
+    "county": "Fresno County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 164.48680693,
+    "total_fires": 1,
+    "county": "Fresno County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 16947.95811329,
+    "total_fires": 5,
+    "county": "Tehama County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 1694.41463863,
+    "total_fires": 9,
+    "county": "Tehama County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 659.19976092,
+    "total_fires": 3,
+    "county": "Tehama County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 423.67835121999997,
+    "total_fires": 3,
+    "county": "Tehama County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 512.6581614300001,
+    "total_fires": 3,
+    "county": "Tehama County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 145674.71197829006,
+    "total_fires": 28,
+    "county": "Tehama County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 1777.0222433,
+    "total_fires": 7,
+    "county": "Tehama County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 3303.2946642800002,
+    "total_fires": 2,
+    "county": "Tehama County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1805.83191296,
+    "total_fires": 2,
+    "county": "Tehama County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 192.6288979,
+    "total_fires": 3,
+    "county": "Tehama County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 29847.713288699997,
+    "total_fires": 3,
+    "county": "Tehama County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 18539.58489452,
+    "total_fires": 4,
+    "county": "Tehama County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 864.94683984,
+    "total_fires": 1,
+    "county": "Tehama County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 79.23770323,
+    "total_fires": 1,
+    "county": "Tehama County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 8505.089923489999,
+    "total_fires": 5,
+    "county": "Tehama County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 2749.4874354599997,
+    "total_fires": 2,
+    "county": "Tehama County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 284.06768584,
+    "total_fires": 1,
+    "county": "Madera County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 1108.18415331,
+    "total_fires": 12,
+    "county": "Madera County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 1895.31969262,
+    "total_fires": 4,
+    "county": "Madera County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 2665.8421865599994,
+    "total_fires": 13,
+    "county": "Madera County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 465.09287731,
+    "total_fires": 2,
+    "county": "Madera County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 4170.68375097,
+    "total_fires": 2,
+    "county": "Madera County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 427.38295231999996,
+    "total_fires": 3,
+    "county": "Madera County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 3554.04159858,
+    "total_fires": 8,
+    "county": "Madera County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 475.08459007,
+    "total_fires": 1,
+    "county": "Madera County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 7205.43307792,
+    "total_fires": 3,
+    "county": "Madera County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 470.96692734,
+    "total_fires": 1,
+    "county": "Madera County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 21812.181942119998,
+    "total_fires": 5,
+    "county": "Madera County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 705.12736893,
+    "total_fires": 3,
+    "county": "Madera County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 19.63482904,
+    "total_fires": 1,
+    "county": "Madera County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 14727.403344759998,
+    "total_fires": 3,
+    "county": "Madera County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 13461.362135,
+    "total_fires": 1,
+    "county": "Madera County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 342.41189897,
+    "total_fires": 2,
+    "county": "Sonoma County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 12706.643546989999,
+    "total_fires": 3,
+    "county": "Sonoma County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 42.13755048,
+    "total_fires": 1,
+    "county": "Sonoma County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 1226.58138866,
+    "total_fires": 5,
+    "county": "Sonoma County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 430.39362395999996,
+    "total_fires": 7,
+    "county": "Sonoma County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 69.55717263,
+    "total_fires": 2,
+    "county": "Sonoma County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 199.69359806,
+    "total_fires": 1,
+    "county": "Sonoma County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 4482.264686329999,
+    "total_fires": 6,
+    "county": "Sonoma County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 121888.93478006999,
+    "total_fires": 7,
+    "county": "Sonoma County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 1609.27,
+    "total_fires": 1,
+    "county": "Sonoma County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 77744.25854674,
+    "total_fires": 1,
+    "county": "Sonoma County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 152091.88964295003,
+    "total_fires": 14,
+    "county": "Tulare County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 148202.94662511002,
+    "total_fires": 14,
+    "county": "Tulare County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 8545.870276239999,
+    "total_fires": 16,
+    "county": "Tulare County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1187.63971352,
+    "total_fires": 4,
+    "county": "Tulare County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 6881.82120699,
+    "total_fires": 9,
+    "county": "Tulare County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 34886.121870389994,
+    "total_fires": 29,
+    "county": "Tulare County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 8875.39943054,
+    "total_fires": 10,
+    "county": "Tulare County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 10983.185782229999,
+    "total_fires": 9,
+    "county": "Tulare County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 7101.19533585,
+    "total_fires": 27,
+    "county": "Tulare County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 23054.230961079997,
+    "total_fires": 11,
+    "county": "Tulare County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 18730.474966680005,
+    "total_fires": 11,
+    "county": "Tulare County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 42371.130000000005,
+    "total_fires": 7,
+    "county": "Tulare County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 25152.461270039996,
+    "total_fires": 10,
+    "county": "Tulare County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 2403.1640690199997,
+    "total_fires": 9,
+    "county": "Tulare County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 7197.91949032,
+    "total_fires": 3,
+    "county": "Tulare County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 1967.65349573,
+    "total_fires": 2,
+    "county": "Tulare County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 7655.51253642,
+    "total_fires": 9,
+    "county": "Tulare County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 1633.1538368099998,
+    "total_fires": 3,
+    "county": "Tulare County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 74807.22810678999,
+    "total_fires": 6,
+    "county": "Tulare County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 523.19475851,
+    "total_fires": 1,
+    "county": "Tulare County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 342.71446881,
+    "total_fires": 2,
+    "county": "San Joaquin County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 1600.46966552,
+    "total_fires": 4,
+    "county": "San Joaquin County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 192.52780266000002,
+    "total_fires": 2,
+    "county": "San Joaquin County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 925.30305337,
+    "total_fires": 2,
+    "county": "San Joaquin County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 301.55553943999996,
+    "total_fires": 3,
+    "county": "San Joaquin County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 471.39672464,
+    "total_fires": 4,
+    "county": "San Joaquin County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 5540.2689784,
+    "total_fires": 1,
+    "county": "San Joaquin County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 17040.14941829,
+    "total_fires": 4,
+    "county": "San Joaquin County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 103.75306919,
+    "total_fires": 1,
+    "county": "San Joaquin County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 286.80544379,
+    "total_fires": 2,
+    "county": "San Joaquin County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 431.72941118,
+    "total_fires": 1,
+    "county": "San Joaquin County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 2138.6927805799996,
+    "total_fires": 11,
+    "county": "Los Angeles County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 15051.860487419997,
+    "total_fires": 20,
+    "county": "Los Angeles County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 154167.31577098,
+    "total_fires": 28,
+    "county": "Los Angeles County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 63330.02753723,
+    "total_fires": 32,
+    "county": "Los Angeles County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 1935.72572612,
+    "total_fires": 10,
+    "county": "Los Angeles County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 37390.005214950004,
+    "total_fires": 12,
+    "county": "Los Angeles County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 8472.91660499,
+    "total_fires": 5,
+    "county": "Los Angeles County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 6354.0954182099995,
+    "total_fires": 15,
+    "county": "Los Angeles County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 8741.80018326,
+    "total_fires": 19,
+    "county": "Los Angeles County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 32868.119692420005,
+    "total_fires": 17,
+    "county": "Los Angeles County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 164745.18070723003,
+    "total_fires": 21,
+    "county": "Los Angeles County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 6110.6750573,
+    "total_fires": 9,
+    "county": "Los Angeles County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 15938.365383219996,
+    "total_fires": 21,
+    "county": "Los Angeles County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 34119.918659840005,
+    "total_fires": 29,
+    "county": "Los Angeles County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 3673.4184683800004,
+    "total_fires": 4,
+    "county": "Los Angeles County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 2530.84311899,
+    "total_fires": 5,
+    "county": "Los Angeles County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 49347.81,
+    "total_fires": 8,
+    "county": "Los Angeles County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 32504.763899830003,
+    "total_fires": 10,
+    "county": "Los Angeles County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 106226.80682917999,
+    "total_fires": 6,
+    "county": "Los Angeles County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 75.46233641,
+    "total_fires": 1,
+    "county": "Alameda County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 17690.779283109998,
+    "total_fires": 3,
+    "county": "Alameda County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 117.64762421,
+    "total_fires": 1,
+    "county": "Alameda County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 5620.172384750001,
+    "total_fires": 2,
+    "county": "Alameda County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 7076.293842870001,
+    "total_fires": 9,
+    "county": "Alameda County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1179.3068691699998,
+    "total_fires": 3,
+    "county": "Alameda County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 458.77516899,
+    "total_fires": 1,
+    "county": "Alameda County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 2989.92537164,
+    "total_fires": 1,
+    "county": "Alameda County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 681.1536124300001,
+    "total_fires": 2,
+    "county": "Sierra County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 12.90593989,
+    "total_fires": 1,
+    "county": "Sierra County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 60.08912069,
+    "total_fires": 2,
+    "county": "Sierra County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 2097.27053308,
+    "total_fires": 1,
+    "county": "Sierra County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 2265.68007399,
+    "total_fires": 1,
+    "county": "Sierra County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 500.92697811000005,
+    "total_fires": 3,
+    "county": "Sierra County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 229.40476685,
+    "total_fires": 2,
+    "county": "Sierra County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 43.2850181,
+    "total_fires": 1,
+    "county": "Sierra County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 750.19759608,
+    "total_fires": 1,
+    "county": "Sierra County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 1.05006379,
+    "total_fires": 1,
+    "county": "Sierra County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 57.12906333,
+    "total_fires": 2,
+    "county": "Plumas County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 3526.32848159,
+    "total_fires": 1,
+    "county": "Plumas County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 88456.71808265,
+    "total_fires": 5,
+    "county": "Plumas County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 157.85571077,
+    "total_fires": 3,
+    "county": "Plumas County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 130.88981601,
+    "total_fires": 2,
+    "county": "Plumas County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 3976.1621389600004,
+    "total_fires": 6,
+    "county": "Plumas County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 48.66885037,
+    "total_fires": 2,
+    "county": "Plumas County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 32962.26435770999,
+    "total_fires": 28,
+    "county": "Plumas County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 1082.14020459,
+    "total_fires": 3,
+    "county": "Plumas County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 1238.04318909,
+    "total_fires": 5,
+    "county": "Plumas County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 76244.30311784,
+    "total_fires": 2,
+    "county": "Plumas County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 183.41759138,
+    "total_fires": 3,
+    "county": "Plumas County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 524.46138993,
+    "total_fires": 3,
+    "county": "Plumas County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 505.15663206,
+    "total_fires": 1,
+    "county": "Plumas County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 248.3,
+    "total_fires": 1,
+    "county": "Plumas County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 2321.54971144,
+    "total_fires": 1,
+    "county": "Plumas County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 4888.05446242,
+    "total_fires": 5,
+    "county": "Plumas County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 31.78277408,
+    "total_fires": 1,
+    "county": "Plumas County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 45696.04720883,
+    "total_fires": 1,
+    "county": "Curry County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 22109.04962003,
+    "total_fires": 23,
+    "county": "Santa Barbara County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 595.4008137699999,
+    "total_fires": 6,
+    "county": "Santa Barbara County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 286.79340066000003,
+    "total_fires": 9,
+    "county": "Santa Barbara County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 17588.874537540003,
+    "total_fires": 7,
+    "county": "Santa Barbara County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 7863.76381742,
+    "total_fires": 9,
+    "county": "Santa Barbara County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 245724.28158352,
+    "total_fires": 6,
+    "county": "Santa Barbara County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 19501.414143460002,
+    "total_fires": 6,
+    "county": "Santa Barbara County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 1491.66013904,
+    "total_fires": 8,
+    "county": "Santa Barbara County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 26.50041387,
+    "total_fires": 1,
+    "county": "Santa Barbara County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 12251.78266239,
+    "total_fires": 6,
+    "county": "Santa Barbara County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 107674.95644573,
+    "total_fires": 5,
+    "county": "Santa Barbara County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 1662.40099164,
+    "total_fires": 4,
+    "county": "Santa Barbara County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 232.16307038000002,
+    "total_fires": 2,
+    "county": "Santa Barbara County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 2024.75141588,
+    "total_fires": 1,
+    "county": "Santa Barbara County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 53963.45,
+    "total_fires": 4,
+    "county": "Santa Barbara County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 59731.92862875,
+    "total_fires": 3,
+    "county": "Santa Barbara County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 469.05379834999997,
+    "total_fires": 3,
+    "county": "Santa Barbara County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 631.81371676,
+    "total_fires": 1,
+    "county": "Santa Barbara County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 1842.2071744900002,
+    "total_fires": 4,
+    "county": "Yolo County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 390.05285268,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 1513.81303331,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 1144.86762704,
+    "total_fires": 2,
+    "county": "Yolo County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 14774.97077109,
+    "total_fires": 3,
+    "county": "Yolo County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 619.27070001,
+    "total_fires": 2,
+    "county": "Yolo County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 319.56341365,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 677.44009518,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 601.8472756,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 6599.3917699,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 5760.1,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 89814.8409859,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 2316.00727066,
+    "total_fires": 1,
+    "county": "Yolo County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 278.27751691,
+    "total_fires": 6,
+    "county": "Shasta County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 1255.1482588,
+    "total_fires": 6,
+    "county": "Shasta County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 26056.60792194,
+    "total_fires": 24,
+    "county": "Shasta County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 1379.64956253,
+    "total_fires": 12,
+    "county": "Shasta County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 320.55499035,
+    "total_fires": 1,
+    "county": "Shasta County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 6625.18178315,
+    "total_fires": 17,
+    "county": "Shasta County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 899.5394108599999,
+    "total_fires": 9,
+    "county": "Shasta County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 208368.73819236003,
+    "total_fires": 35,
+    "county": "Shasta County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 2128.6085926,
+    "total_fires": 11,
+    "county": "Shasta County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 39206.45324014,
+    "total_fires": 20,
+    "county": "Shasta County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 50020.47884126,
+    "total_fires": 8,
+    "county": "Shasta County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 50407.79804879,
+    "total_fires": 5,
+    "county": "Shasta County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 183.31389023,
+    "total_fires": 1,
+    "county": "Shasta County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 346250.03723719,
+    "total_fires": 7,
+    "county": "Shasta County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 28073.20238528,
+    "total_fires": 1,
+    "county": "Shasta County",
+    "year": 1012
+  },
+  {
+    "total_acreage": 8395.82572357,
+    "total_fires": 6,
+    "county": "Shasta County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 1170.25576593,
+    "total_fires": 2,
+    "county": "Shasta County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 210.60578647,
+    "total_fires": 1,
+    "county": "San Mateo County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 37656.98119828,
+    "total_fires": 5,
+    "county": "Glenn County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 1110.2107367,
+    "total_fires": 1,
+    "county": "Glenn County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 8407.38708188,
+    "total_fires": 19,
+    "county": "Glenn County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 324.6951922,
+    "total_fires": 1,
+    "county": "Glenn County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 434.10233345,
+    "total_fires": 2,
+    "county": "Glenn County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 2150.79554002,
+    "total_fires": 2,
+    "county": "Washoe County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 16498.6601376,
+    "total_fires": 6,
+    "county": "Washoe County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 24420.265649510002,
+    "total_fires": 2,
+    "county": "Washoe County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1445.0116204899998,
+    "total_fires": 5,
+    "county": "Washoe County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 102460.245481,
+    "total_fires": 3,
+    "county": "Washoe County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 83756.08179093999,
+    "total_fires": 2,
+    "county": "Washoe County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 274.66990956,
+    "total_fires": 1,
+    "county": "Washoe County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 17.40458402,
+    "total_fires": 1,
+    "county": "Washoe County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 15.15742524,
+    "total_fires": 1,
+    "county": "Washoe County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 15274.65029815,
+    "total_fires": 1,
+    "county": "Washoe County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 8972.22774637,
+    "total_fires": 10,
+    "county": "Lassen County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 1230.9018676599999,
+    "total_fires": 2,
+    "county": "Lassen County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 13058.39684649,
+    "total_fires": 18,
+    "county": "Lassen County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 106970.64286141002,
+    "total_fires": 6,
+    "county": "Lassen County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 6987.2350818,
+    "total_fires": 5,
+    "county": "Lassen County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 6542.09719375,
+    "total_fires": 8,
+    "county": "Lassen County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 1431.12816286,
+    "total_fires": 8,
+    "county": "Lassen County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 2651.2256619899995,
+    "total_fires": 7,
+    "county": "Lassen County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 8397.944720849999,
+    "total_fires": 17,
+    "county": "Lassen County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 12510.599813199999,
+    "total_fires": 2,
+    "county": "Lassen County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 330565.65971405007,
+    "total_fires": 8,
+    "county": "Lassen County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 12523.36905845,
+    "total_fires": 6,
+    "county": "Lassen County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 19934.935322960006,
+    "total_fires": 9,
+    "county": "Lassen County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 696.41067418,
+    "total_fires": 4,
+    "county": "Lassen County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 39776.27483969,
+    "total_fires": 1,
+    "county": "Lassen County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 65.45874017,
+    "total_fires": 1,
+    "county": "Lassen County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 11908.33944072,
+    "total_fires": 1,
+    "county": "Lassen County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 2587.19,
+    "total_fires": 1,
+    "county": "Lassen County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 3380.21338356,
+    "total_fires": 1,
+    "county": "Lassen County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 44.469320169999996,
+    "total_fires": 6,
+    "county": "Marin County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 128.18458595,
+    "total_fires": 5,
+    "county": "Marin County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 376.34545561000004,
+    "total_fires": 2,
+    "county": "Marin County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 20.35153933,
+    "total_fires": 1,
+    "county": "Marin County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 316.23188863,
+    "total_fires": 4,
+    "county": "Marin County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 0.37010225,
+    "total_fires": 1,
+    "county": "Marin County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 5.75111839,
+    "total_fires": 2,
+    "county": "Marin County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 4521.102966719999,
+    "total_fires": 9,
+    "county": "Orange County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 508.21760096,
+    "total_fires": 3,
+    "county": "Orange County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 32.54806825,
+    "total_fires": 3,
+    "county": "Orange County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 175.82138424,
+    "total_fires": 8,
+    "county": "Orange County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 30245.473072210003,
+    "total_fires": 12,
+    "county": "Orange County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 1173.64671558,
+    "total_fires": 1,
+    "county": "Orange County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 10591.98141962,
+    "total_fires": 1,
+    "county": "Orange County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 166.13649725,
+    "total_fires": 3,
+    "county": "Orange County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 31882.96157807,
+    "total_fires": 1,
+    "county": "Orange County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 38.37838332,
+    "total_fires": 1,
+    "county": "Orange County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 508.34325066,
+    "total_fires": 1,
+    "county": "Orange County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 1166.64292046,
+    "total_fires": 1,
+    "county": "Orange County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 458.47013571,
+    "total_fires": 3,
+    "county": "Orange County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 148.71,
+    "total_fires": 1,
+    "county": "Orange County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 13465.48482381,
+    "total_fires": 2,
+    "county": "Orange County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 1861.13225,
+    "total_fires": 7,
+    "county": "Tuolumne County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 14634.644973159999,
+    "total_fires": 11,
+    "county": "Tuolumne County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 5750.326478720001,
+    "total_fires": 10,
+    "county": "Tuolumne County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 378.22972296,
+    "total_fires": 3,
+    "county": "Tuolumne County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 22181.049009069997,
+    "total_fires": 10,
+    "county": "Tuolumne County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 18338.30227024,
+    "total_fires": 15,
+    "county": "Tuolumne County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 9062.86006895,
+    "total_fires": 10,
+    "county": "Tuolumne County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 9197.39842315,
+    "total_fires": 6,
+    "county": "Tuolumne County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 716.28584969,
+    "total_fires": 7,
+    "county": "Tuolumne County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 5560.894694019999,
+    "total_fires": 8,
+    "county": "Tuolumne County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 851.8817826200001,
+    "total_fires": 5,
+    "county": "Tuolumne County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 3741.2496732600002,
+    "total_fires": 5,
+    "county": "Tuolumne County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 1198.94839129,
+    "total_fires": 5,
+    "county": "Tuolumne County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 258246.65224019001,
+    "total_fires": 7,
+    "county": "Tuolumne County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 36970.94120664999,
+    "total_fires": 4,
+    "county": "Tuolumne County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 10.00268223,
+    "total_fires": 3,
+    "county": "Tuolumne County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 610.20211324,
+    "total_fires": 4,
+    "county": "Tuolumne County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 1079.95,
+    "total_fires": 1,
+    "county": "Tuolumne County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 6642.50842256,
+    "total_fires": 5,
+    "county": "Tuolumne County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 166.15184561,
+    "total_fires": 1,
+    "county": "Santa Cruz County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 5628.08482883,
+    "total_fires": 4,
+    "county": "Santa Cruz County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 8488.81554101,
+    "total_fires": 2,
+    "county": "Santa Cruz County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 341.13622082,
+    "total_fires": 1,
+    "county": "Santa Cruz County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 139.07731777,
+    "total_fires": 1,
+    "county": "Klamath County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 207.29123395,
+    "total_fires": 1,
+    "county": "Mineral County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 1174.03867897,
+    "total_fires": 1,
+    "county": "Mineral County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 580.89398313,
+    "total_fires": 3,
+    "county": "Monterey County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 5811.84929114,
+    "total_fires": 1,
+    "county": "Monterey County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 1848.06973833,
+    "total_fires": 12,
+    "county": "Monterey County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1268.73989575,
+    "total_fires": 4,
+    "county": "Monterey County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 1709.2735650799998,
+    "total_fires": 6,
+    "county": "Monterey County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 14784.65193175,
+    "total_fires": 4,
+    "county": "Monterey County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 192.69747836000002,
+    "total_fires": 7,
+    "county": "Monterey County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 9132.33080196,
+    "total_fires": 6,
+    "county": "Monterey County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 257374.32436271998,
+    "total_fires": 8,
+    "county": "Monterey County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 297.47669217,
+    "total_fires": 7,
+    "county": "Monterey County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 1901.17636512,
+    "total_fires": 4,
+    "county": "Monterey County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 1270.05867723,
+    "total_fires": 4,
+    "county": "Monterey County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 2530.04814232,
+    "total_fires": 1,
+    "county": "Monterey County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 207984.51,
+    "total_fires": 2,
+    "county": "Monterey County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 1175.9952864900001,
+    "total_fires": 2,
+    "county": "Monterey County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 476.57397998,
+    "total_fires": 2,
+    "county": "Monterey County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 1653.4893135,
+    "total_fires": 1,
+    "county": "Monterey County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 3248.13199103,
+    "total_fires": 10,
+    "county": "Merced County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1906.69336417,
+    "total_fires": 2,
+    "county": "Merced County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 2628.1014154000004,
+    "total_fires": 2,
+    "county": "Merced County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 872.80975347,
+    "total_fires": 11,
+    "county": "Merced County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 264.70362682,
+    "total_fires": 1,
+    "county": "Merced County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 996.78425756,
+    "total_fires": 1,
+    "county": "Merced County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 766.04334488,
+    "total_fires": 1,
+    "county": "Merced County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 2062.51741869,
+    "total_fires": 2,
+    "county": "Merced County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 1019.44963484,
+    "total_fires": 2,
+    "county": "Merced County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 428.33540353999996,
+    "total_fires": 3,
+    "county": "Sutter County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 349.99824732,
+    "total_fires": 2,
+    "county": "Sutter County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 26.45800876,
+    "total_fires": 1,
+    "county": "Sutter County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 83.00683396,
+    "total_fires": 1,
+    "county": "Sutter County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 187.96007978,
+    "total_fires": 1,
+    "county": "Solano County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 281.70928922999997,
+    "total_fires": 2,
+    "county": "Solano County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 404.44880541,
+    "total_fires": 1,
+    "county": "Solano County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 1414.51541669,
+    "total_fires": 3,
+    "county": "Solano County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 5.99894471,
+    "total_fires": 1,
+    "county": "Solano County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 193.76792308,
+    "total_fires": 1,
+    "county": "Solano County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 8157.13576932,
+    "total_fires": 1,
+    "county": "Solano County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 4114.64606875,
+    "total_fires": 1,
+    "county": "Solano County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 702.76573249,
+    "total_fires": 1,
+    "county": "Solano County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 182218.84688197,
+    "total_fires": 8,
+    "county": "Ventura County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 1231.59078152,
+    "total_fires": 3,
+    "county": "Ventura County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 646.48716173,
+    "total_fires": 6,
+    "county": "Ventura County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 161.1755893,
+    "total_fires": 2,
+    "county": "Ventura County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 15859.40306648,
+    "total_fires": 1,
+    "county": "Ventura County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 59262.78059149999,
+    "total_fires": 10,
+    "county": "Ventura County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 175956.59535634005,
+    "total_fires": 9,
+    "county": "Ventura County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 51706.54170173,
+    "total_fires": 4,
+    "county": "Ventura County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 18229.342437420004,
+    "total_fires": 7,
+    "county": "Ventura County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 119.45691597000001,
+    "total_fires": 5,
+    "county": "Ventura County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 123.20975649000002,
+    "total_fires": 3,
+    "county": "Ventura County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 28940.2778455,
+    "total_fires": 10,
+    "county": "Ventura County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 223.79177066,
+    "total_fires": 1,
+    "county": "Ventura County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 1050.5001407099999,
+    "total_fires": 2,
+    "county": "Ventura County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 281980.89137959003,
+    "total_fires": 2,
+    "county": "Ventura County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 2348.4700000000003,
+    "total_fires": 2,
+    "county": "Ventura County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 6101.34778497,
+    "total_fires": 1,
+    "county": "Ventura County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 3973.34156078,
+    "total_fires": 3,
+    "county": "Ventura County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 5561.38281123,
+    "total_fires": 2,
+    "county": "Santa Clara County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 494.11324186,
+    "total_fires": 3,
+    "county": "Santa Clara County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 7564.89056213,
+    "total_fires": 3,
+    "county": "Santa Clara County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 1915.7432790799999,
+    "total_fires": 3,
+    "county": "Santa Clara County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 1414.47395042,
+    "total_fires": 4,
+    "county": "Santa Clara County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 47748.27974565,
+    "total_fires": 1,
+    "county": "Santa Clara County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 1688.59272956,
+    "total_fires": 1,
+    "county": "Santa Clara County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 4523.98,
+    "total_fires": 1,
+    "county": "Santa Clara County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 259.10615628,
+    "total_fires": 1,
+    "county": "Santa Clara County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 24220.301453359996,
+    "total_fires": 7,
+    "county": "Placer County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 8473.018270069999,
+    "total_fires": 3,
+    "county": "Placer County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 593.1460559,
+    "total_fires": 3,
+    "county": "Placer County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 986.3545018799999,
+    "total_fires": 4,
+    "county": "Placer County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 924.63384238,
+    "total_fires": 3,
+    "county": "Placer County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 1279.33705343,
+    "total_fires": 13,
+    "county": "Placer County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 1245.94560944,
+    "total_fires": 4,
+    "county": "Placer County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 42516.06558403,
+    "total_fires": 17,
+    "county": "Placer County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 29.68832912,
+    "total_fires": 1,
+    "county": "Placer County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1002.9216547999999,
+    "total_fires": 13,
+    "county": "Placer County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 1575.0804912800002,
+    "total_fires": 11,
+    "county": "Placer County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 640.70272648,
+    "total_fires": 1,
+    "county": "Placer County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 177.34753531,
+    "total_fires": 2,
+    "county": "Placer County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 27920.75665221,
+    "total_fires": 8,
+    "county": "Placer County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 2852.54452559,
+    "total_fires": 2,
+    "county": "Placer County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 3.7419386,
+    "total_fires": 1,
+    "county": "Placer County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 1140.79956064,
+    "total_fires": 1,
+    "county": "Placer County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 26.16976933,
+    "total_fires": 2,
+    "county": "Municipio de Tijuana",
+    "year": 2004
+  },
+  {
+    "total_acreage": 29.088223,
+    "total_fires": 1,
+    "county": "Municipio de Tijuana",
+    "year": 2008
+  },
+  {
+    "total_acreage": 11.37238044,
+    "total_fires": 1,
+    "county": "Municipio de Tijuana",
+    "year": 2012
+  },
+  {
+    "total_acreage": 12.25547933,
+    "total_fires": 1,
+    "county": "Municipio de Tijuana",
+    "year": 2018
+  },
+  {
+    "total_acreage": 1735.93334594,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 63.31633939,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 325.99031665,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 632.01345131,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 491.37570075,
+    "total_fires": 4,
+    "county": "San Benito County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 134.68404152,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 15.62451683,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 347.88606586000003,
+    "total_fires": 5,
+    "county": "San Benito County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 92.09292644000001,
+    "total_fires": 4,
+    "county": "San Benito County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 65.14017719,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 3786.91263644,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 103.87378071,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 669.97347041,
+    "total_fires": 1,
+    "county": "San Benito County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 446.40449587,
+    "total_fires": 2,
+    "county": "San Benito County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 2376.6745872,
+    "total_fires": 4,
+    "county": "San Benito County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 589.5088688,
+    "total_fires": 4,
+    "county": "Sacramento County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 1278.41162934,
+    "total_fires": 4,
+    "county": "Sacramento County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 609.05961206,
+    "total_fires": 1,
+    "county": "Sacramento County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 103.53579166,
+    "total_fires": 1,
+    "county": "Sacramento County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 1268.11017944,
+    "total_fires": 1,
+    "county": "Sacramento County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 7824.9471283,
+    "total_fires": 18,
+    "county": "Lake County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 8634.97934725,
+    "total_fires": 3,
+    "county": "Lake County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 772.64598488,
+    "total_fires": 4,
+    "county": "Lake County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 309.93398897,
+    "total_fires": 2,
+    "county": "Lake County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 1024.01096879,
+    "total_fires": 1,
+    "county": "Lake County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 2753.0686448700003,
+    "total_fires": 5,
+    "county": "Lake County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 354.76667987,
+    "total_fires": 5,
+    "county": "Lake County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 271.4613724,
+    "total_fires": 1,
+    "county": "Lake County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 7475.775893360001,
+    "total_fires": 3,
+    "county": "Lake County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 647.94062887,
+    "total_fires": 2,
+    "county": "Lake County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 1113.4365906200003,
+    "total_fires": 14,
+    "county": "Lake County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 13727.069840299999,
+    "total_fires": 4,
+    "county": "Lake County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 174431.15416307998,
+    "total_fires": 6,
+    "county": "Lake County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 1304.41568024,
+    "total_fires": 3,
+    "county": "Lake County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 2503.9497334300004,
+    "total_fires": 2,
+    "county": "Lake County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 853172.6484545199,
+    "total_fires": 6,
+    "county": "Lake County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 3946.12,
+    "total_fires": 1,
+    "county": "Lake County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 92.7553,
+    "total_fires": 2,
+    "county": "Imperial County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 698.96314523,
+    "total_fires": 1,
+    "county": "Imperial County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 401.54689633,
+    "total_fires": 2,
+    "county": "Imperial County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 142.102419,
+    "total_fires": 1,
+    "county": "Imperial County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 890.39236594,
+    "total_fires": 2,
+    "county": "Imperial County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 261.72399904,
+    "total_fires": 1,
+    "county": "Imperial County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 229.13,
+    "total_fires": 2,
+    "county": "Imperial County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 7354.850045870001,
+    "total_fires": 7,
+    "county": "Kern County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 2087.42253868,
+    "total_fires": 6,
+    "county": "Kern County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 14929.96057394,
+    "total_fires": 20,
+    "county": "Kern County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 10258.16603367,
+    "total_fires": 22,
+    "county": "Kern County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 1726.57272753,
+    "total_fires": 3,
+    "county": "Kern County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 15098.982608639997,
+    "total_fires": 25,
+    "county": "Kern County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 4890.57757597,
+    "total_fires": 4,
+    "county": "Kern County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 38448.68419158,
+    "total_fires": 10,
+    "county": "Kern County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 18416.72910603,
+    "total_fires": 11,
+    "county": "Kern County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 2778.57731166,
+    "total_fires": 24,
+    "county": "Kern County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 17795.63688976,
+    "total_fires": 21,
+    "county": "Kern County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 18063.65963305,
+    "total_fires": 16,
+    "county": "Kern County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 148370.81493953,
+    "total_fires": 37,
+    "county": "Kern County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 2862.1864275500006,
+    "total_fires": 23,
+    "county": "Kern County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 7643.2797879,
+    "total_fires": 11,
+    "county": "Kern County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 8566.40914206,
+    "total_fires": 4,
+    "county": "Kern County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 50377.399999999994,
+    "total_fires": 4,
+    "county": "Kern County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 367.58350797,
+    "total_fires": 1,
+    "county": "Kern County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 3711.52263833,
+    "total_fires": 1,
+    "county": "Nye County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 1018.53079512,
+    "total_fires": 2,
+    "county": "Del Norte County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 3453.87161879,
+    "total_fires": 2,
+    "county": "Del Norte County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 101.13668159,
+    "total_fires": 1,
+    "county": "Del Norte County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 85242.74622699,
+    "total_fires": 4,
+    "county": "Del Norte County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 422.06077953,
+    "total_fires": 1,
+    "county": "Del Norte County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 125.47579984000001,
+    "total_fires": 3,
+    "county": "Del Norte County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 329.58175085,
+    "total_fires": 2,
+    "county": "Del Norte County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 69874.79434238,
+    "total_fires": 10,
+    "county": "Del Norte County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 10.0957893,
+    "total_fires": 1,
+    "county": "Del Norte County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 31.28570564,
+    "total_fires": 1,
+    "county": "Del Norte County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 200.15479129,
+    "total_fires": 1,
+    "county": "Contra Costa County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 79.57681722,
+    "total_fires": 1,
+    "county": "Contra Costa County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 398.61618722000003,
+    "total_fires": 2,
+    "county": "Contra Costa County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 1454.5763237,
+    "total_fires": 6,
+    "county": "Contra Costa County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 695.57214009,
+    "total_fires": 2,
+    "county": "Contra Costa County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 3720.51140558,
+    "total_fires": 2,
+    "county": "Contra Costa County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 441.15476543,
+    "total_fires": 3,
+    "county": "Humboldt County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 70.08984139,
+    "total_fires": 1,
+    "county": "Humboldt County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 423.70834613,
+    "total_fires": 3,
+    "county": "Humboldt County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 4366.14868213,
+    "total_fires": 3,
+    "county": "Humboldt County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 24004.14522164,
+    "total_fires": 10,
+    "county": "Humboldt County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 141.44179072999998,
+    "total_fires": 4,
+    "county": "Humboldt County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 97.40868239,
+    "total_fires": 3,
+    "county": "Humboldt County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 22114.509139730002,
+    "total_fires": 14,
+    "county": "Humboldt County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 3388.6212734500004,
+    "total_fires": 11,
+    "county": "Humboldt County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 139.16553850000003,
+    "total_fires": 4,
+    "county": "Humboldt County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 106654.24598502001,
+    "total_fires": 15,
+    "county": "Humboldt County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 207.04650154,
+    "total_fires": 1,
+    "county": "Humboldt County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 523.98953148,
+    "total_fires": 1,
+    "county": "Humboldt County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 14971.67704091,
+    "total_fires": 12,
+    "county": "Humboldt County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 121.83424005,
+    "total_fires": 1,
+    "county": "Humboldt County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 210.31797383999998,
+    "total_fires": 2,
+    "county": "Humboldt County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 1176.08,
+    "total_fires": 5,
+    "county": "Humboldt County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 4155.870282270001,
+    "total_fires": 3,
+    "county": "Humboldt County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 1887.91319157,
+    "total_fires": 3,
+    "county": "Nevada County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 142.28262315,
+    "total_fires": 1,
+    "county": "Nevada County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 117.76513465000001,
+    "total_fires": 2,
+    "county": "Nevada County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 83.48350389000001,
+    "total_fires": 3,
+    "county": "Nevada County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 157.9401875,
+    "total_fires": 3,
+    "county": "Nevada County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 86.79484723,
+    "total_fires": 3,
+    "county": "Nevada County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 342.98784290000003,
+    "total_fires": 6,
+    "county": "Nevada County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 3602.1675967500005,
+    "total_fires": 3,
+    "county": "Nevada County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 2315.6295652,
+    "total_fires": 1,
+    "county": "Nevada County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 1503.65296884,
+    "total_fires": 3,
+    "county": "Nevada County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 21.28696622,
+    "total_fires": 1,
+    "county": "Nevada County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 57.1111735,
+    "total_fires": 2,
+    "county": "Nevada County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 6821.38019619,
+    "total_fires": 35,
+    "county": "San Diego County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 410746.88725937996,
+    "total_fires": 14,
+    "county": "San Diego County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 10635.19811397,
+    "total_fires": 19,
+    "county": "San Diego County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 26157.23057213,
+    "total_fires": 10,
+    "county": "San Diego County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 75116.02982184001,
+    "total_fires": 15,
+    "county": "San Diego County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 12596.34028176,
+    "total_fires": 2,
+    "county": "San Diego County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 357618.27462946996,
+    "total_fires": 18,
+    "county": "San Diego County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 18106.28248725999,
+    "total_fires": 19,
+    "county": "San Diego County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 787.67718803,
+    "total_fires": 6,
+    "county": "San Diego County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 2585.5265276200003,
+    "total_fires": 11,
+    "county": "San Diego County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 15392.477586609999,
+    "total_fires": 14,
+    "county": "San Diego County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 17351.046285660002,
+    "total_fires": 6,
+    "county": "San Diego County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 216.11613878999998,
+    "total_fires": 4,
+    "county": "San Diego County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 35522.68021097001,
+    "total_fires": 14,
+    "county": "San Diego County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 3.15022057,
+    "total_fires": 1,
+    "county": "San Diego County",
+    "year": 1412
+  },
+  {
+    "total_acreage": 29541.027225960002,
+    "total_fires": 11,
+    "county": "San Diego County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 337.91361778,
+    "total_fires": 2,
+    "county": "San Diego County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 6931.61461346,
+    "total_fires": 7,
+    "county": "San Diego County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 9670.57,
+    "total_fires": 4,
+    "county": "San Diego County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 1643.8528592399998,
+    "total_fires": 5,
+    "county": "San Diego County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 968.79327547,
+    "total_fires": 6,
+    "county": "Amador County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 2232.45820739,
+    "total_fires": 3,
+    "county": "Amador County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 17450.80882612,
+    "total_fires": 3,
+    "county": "Amador County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 315.55021536000004,
+    "total_fires": 2,
+    "county": "Amador County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 21.23586987,
+    "total_fires": 1,
+    "county": "Amador County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 183.72800963999998,
+    "total_fires": 2,
+    "county": "Amador County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 250.52597652,
+    "total_fires": 1,
+    "county": "Amador County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 341.55057625,
+    "total_fires": 1,
+    "county": "Amador County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 16.32401119,
+    "total_fires": 1,
+    "county": "Amador County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 9847.050021750001,
+    "total_fires": 14,
+    "county": "Modoc County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 11736.483816229998,
+    "total_fires": 19,
+    "county": "Modoc County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 35.94892435,
+    "total_fires": 2,
+    "county": "Modoc County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 587.67023282,
+    "total_fires": 6,
+    "county": "Modoc County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 10713.55430596,
+    "total_fires": 4,
+    "county": "Modoc County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 662.72989729,
+    "total_fires": 5,
+    "county": "Modoc County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 781.2009356899999,
+    "total_fires": 4,
+    "county": "Modoc County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 7210.67606012,
+    "total_fires": 4,
+    "county": "Modoc County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 9615.36876511,
+    "total_fires": 12,
+    "county": "Modoc County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 92730.57522919998,
+    "total_fires": 26,
+    "county": "Modoc County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 103.17020706,
+    "total_fires": 2,
+    "county": "Modoc County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 28.81021279,
+    "total_fires": 2,
+    "county": "Modoc County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 576.1404637700001,
+    "total_fires": 7,
+    "county": "Modoc County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 6220.52316184,
+    "total_fires": 6,
+    "county": "Modoc County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 2596.75,
+    "total_fires": 5,
+    "county": "Modoc County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 16615.12657002,
+    "total_fires": 9,
+    "county": "Modoc County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 227.30031105,
+    "total_fires": 4,
+    "county": "Modoc County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 5886.49802202,
+    "total_fires": 1,
+    "county": "Modoc County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 41505.96840734,
+    "total_fires": 3,
+    "county": "Modoc County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 0.17519196,
+    "total_fires": 1,
+    "county": "Josephine County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 23827.01260949,
+    "total_fires": 9,
+    "county": "San Bernardino County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 125405.24739843997,
+    "total_fires": 28,
+    "county": "San Bernardino County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 3127.43314069,
+    "total_fires": 9,
+    "county": "San Bernardino County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 37970.59616588001,
+    "total_fires": 21,
+    "county": "San Bernardino County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 1448.65225347,
+    "total_fires": 4,
+    "county": "San Bernardino County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 161189.40025064006,
+    "total_fires": 26,
+    "county": "San Bernardino County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 146395.33160570002,
+    "total_fires": 4,
+    "county": "San Bernardino County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 1656.5578305000001,
+    "total_fires": 11,
+    "county": "San Bernardino County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 10540.464657810002,
+    "total_fires": 8,
+    "county": "San Bernardino County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 4405.683218769999,
+    "total_fires": 12,
+    "county": "San Bernardino County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 970.2636201299999,
+    "total_fires": 7,
+    "county": "San Bernardino County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 439.38397689,
+    "total_fires": 6,
+    "county": "San Bernardino County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 1527.16145119,
+    "total_fires": 12,
+    "county": "San Bernardino County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 2190.45680596,
+    "total_fires": 1,
+    "county": "San Bernardino County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 3672.8530580499996,
+    "total_fires": 8,
+    "county": "San Bernardino County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 37017.815719160004,
+    "total_fires": 4,
+    "county": "San Bernardino County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 45144.78,
+    "total_fires": 2,
+    "county": "San Bernardino County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 1351.7186388,
+    "total_fires": 1,
+    "county": "San Bernardino County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 16715.923614230003,
+    "total_fires": 23,
+    "county": "Riverside County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 48805.04726795999,
+    "total_fires": 16,
+    "county": "Riverside County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 40199.14736661001,
+    "total_fires": 20,
+    "county": "Riverside County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 4853.04241194,
+    "total_fires": 11,
+    "county": "Riverside County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 503.83280536999996,
+    "total_fires": 3,
+    "county": "Riverside County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 617.01473404,
+    "total_fires": 3,
+    "county": "Riverside County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 5155.078187540001,
+    "total_fires": 16,
+    "county": "Riverside County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 21359.79528015,
+    "total_fires": 10,
+    "county": "Riverside County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 3796.12088745,
+    "total_fires": 24,
+    "county": "Riverside County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 1804.16473956,
+    "total_fires": 10,
+    "county": "Riverside County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 4567.77242728,
+    "total_fires": 14,
+    "county": "Riverside County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 7216.49117853,
+    "total_fires": 16,
+    "county": "Riverside County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 2354.52879788,
+    "total_fires": 6,
+    "county": "Riverside County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 57478.337184560005,
+    "total_fires": 20,
+    "county": "Riverside County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 8082.591288300001,
+    "total_fires": 9,
+    "county": "Riverside County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 1012.07,
+    "total_fires": 2,
+    "county": "Riverside County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 1117.8740916499999,
+    "total_fires": 2,
+    "county": "Riverside County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 37018.25520371999,
+    "total_fires": 8,
+    "county": "Riverside County",
+    "year": 2018
+  },
+  {
+    "total_acreage": null,
+    "total_fires": 1,
+    "county": "Riverside County",
+    "year": 2020
+  },
+  {
+    "total_acreage": 32621.007937739996,
+    "total_fires": 5,
+    "county": "Mono County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 700.4908195,
+    "total_fires": 1,
+    "county": "Mono County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 4107.0221955199995,
+    "total_fires": 4,
+    "county": "Mono County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 8304.27362206,
+    "total_fires": 2,
+    "county": "Mono County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 3257.9530887400006,
+    "total_fires": 4,
+    "county": "Mono County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 109.88005639000001,
+    "total_fires": 4,
+    "county": "Mono County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 7538.186673099999,
+    "total_fires": 3,
+    "county": "Mono County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 2457.7828684,
+    "total_fires": 5,
+    "county": "Mono County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 10469.64,
+    "total_fires": 4,
+    "county": "Mono County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 13792.238762070001,
+    "total_fires": 3,
+    "county": "Mono County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 90.76410426,
+    "total_fires": 1,
+    "county": "Mono County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 377.13303144,
+    "total_fires": 2,
+    "county": "Mono County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 2000.69437053,
+    "total_fires": 3,
+    "county": "Mono County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 10865.77862949,
+    "total_fires": 3,
+    "county": "Mono County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 7729.1002214,
+    "total_fires": 4,
+    "county": "Mono County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 109.99460734,
+    "total_fires": 1,
+    "county": "Mono County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 9507.86206985,
+    "total_fires": 3,
+    "county": "Mono County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 4841.20904319,
+    "total_fires": 1,
+    "county": "Mono County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 389.78103487,
+    "total_fires": 1,
+    "county": "Colusa County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 274.1239789,
+    "total_fires": 1,
+    "county": "Colusa County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 1862.0545241099999,
+    "total_fires": 2,
+    "county": "Colusa County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 11280.66086057,
+    "total_fires": 3,
+    "county": "Colusa County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 51917.56254123,
+    "total_fires": 3,
+    "county": "Colusa County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 396.57176717,
+    "total_fires": 1,
+    "county": "Colusa County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 4122.4459919,
+    "total_fires": 20,
+    "county": "El Dorado County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 281.70550918,
+    "total_fires": 5,
+    "county": "El Dorado County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 626.73471567,
+    "total_fires": 7,
+    "county": "El Dorado County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 300.22427069,
+    "total_fires": 4,
+    "county": "El Dorado County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 7674.12043268,
+    "total_fires": 4,
+    "county": "El Dorado County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 81.54366507,
+    "total_fires": 4,
+    "county": "El Dorado County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 3201.40931445,
+    "total_fires": 3,
+    "county": "El Dorado County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 227.83841847999997,
+    "total_fires": 7,
+    "county": "El Dorado County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 43.50022776,
+    "total_fires": 1,
+    "county": "El Dorado County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 609.91165179,
+    "total_fires": 8,
+    "county": "El Dorado County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 670.03223498,
+    "total_fires": 4,
+    "county": "El Dorado County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 44.23281205,
+    "total_fires": 1,
+    "county": "El Dorado County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 679.5225428400001,
+    "total_fires": 4,
+    "county": "El Dorado County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 101344.66631526999,
+    "total_fires": 3,
+    "county": "El Dorado County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 5836.8,
+    "total_fires": 3,
+    "county": "El Dorado County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 134.91022718,
+    "total_fires": 1,
+    "county": "El Dorado County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 84.01945537,
+    "total_fires": 1,
+    "county": "El Dorado County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 135.47871462,
+    "total_fires": 1,
+    "county": "Mohave County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 94837.17659349,
+    "total_fires": 4,
+    "county": "Butte County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 540.82167422,
+    "total_fires": 3,
+    "county": "Butte County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 10909.90409706,
+    "total_fires": 4,
+    "county": "Butte County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 18550.05113444,
+    "total_fires": 5,
+    "county": "Butte County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 2386.67721285,
+    "total_fires": 3,
+    "county": "Butte County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 1162.13887774,
+    "total_fires": 4,
+    "county": "Butte County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 1954.71860975,
+    "total_fires": 1,
+    "county": "Butte County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 164814.01861383993,
+    "total_fires": 47,
+    "county": "Butte County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 699.3231041299999,
+    "total_fires": 2,
+    "county": "Butte County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 2189.4461663,
+    "total_fires": 4,
+    "county": "Butte County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 24.43182593,
+    "total_fires": 1,
+    "county": "Butte County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 117.36118807,
+    "total_fires": 1,
+    "county": "Butte County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 3309.7047921700005,
+    "total_fires": 7,
+    "county": "Butte County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 1095.9899999999998,
+    "total_fires": 2,
+    "county": "Butte County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 153438.274457,
+    "total_fires": 1,
+    "county": "Butte County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 1073.00624032,
+    "total_fires": 1,
+    "county": "Butte County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 18947.67837388,
+    "total_fires": 5,
+    "county": "Mariposa County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 7473.75770819,
+    "total_fires": 15,
+    "county": "Mariposa County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 19137.02095345,
+    "total_fires": 4,
+    "county": "Mariposa County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 216.01190573000002,
+    "total_fires": 3,
+    "county": "Mariposa County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 2731.1057467299997,
+    "total_fires": 16,
+    "county": "Mariposa County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 2926.66035097,
+    "total_fires": 8,
+    "county": "Mariposa County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 39273.464018039995,
+    "total_fires": 8,
+    "county": "Mariposa County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 1526.5966770299997,
+    "total_fires": 8,
+    "county": "Mariposa County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 1622.2869227299998,
+    "total_fires": 4,
+    "county": "Mariposa County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 10644.961700279999,
+    "total_fires": 3,
+    "county": "Mariposa County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 11.02855548,
+    "total_fires": 1,
+    "county": "Mariposa County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 580.7393187800001,
+    "total_fires": 6,
+    "county": "Mariposa County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 17691.36060054,
+    "total_fires": 10,
+    "county": "Mariposa County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 7198.7684955,
+    "total_fires": 3,
+    "county": "Mariposa County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 3387.25687562,
+    "total_fires": 3,
+    "county": "Mariposa County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 2204.76256267,
+    "total_fires": 3,
+    "county": "Mariposa County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 89985.54427942999,
+    "total_fires": 5,
+    "county": "Mariposa County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 1151.29,
+    "total_fires": 3,
+    "county": "Mariposa County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 97320.69883596,
+    "total_fires": 3,
+    "county": "Mariposa County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 1055.97393358,
+    "total_fires": 1,
+    "county": "Mariposa County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 26.38650955,
+    "total_fires": 1,
+    "county": "Kings County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 73.45704515,
+    "total_fires": 1,
+    "county": "Kings County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 944.94028737,
+    "total_fires": 1,
+    "county": "Kings County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 3197.6990985499997,
+    "total_fires": 17,
+    "county": "Siskiyou County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 10333.94311375,
+    "total_fires": 13,
+    "county": "Siskiyou County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 11035.688998819998,
+    "total_fires": 7,
+    "county": "Siskiyou County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 3338.28186438,
+    "total_fires": 11,
+    "county": "Siskiyou County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 1042.16474119,
+    "total_fires": 7,
+    "county": "Siskiyou County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 4146.04445381,
+    "total_fires": 3,
+    "county": "Siskiyou County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 84450.09441480001,
+    "total_fires": 27,
+    "county": "Siskiyou County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 49212.918728829995,
+    "total_fires": 24,
+    "county": "Siskiyou County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 510004.16205775994,
+    "total_fires": 32,
+    "county": "Siskiyou County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 6443.19923467,
+    "total_fires": 9,
+    "county": "Siskiyou County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 470.9550280700001,
+    "total_fires": 17,
+    "county": "Siskiyou County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 691.92301347,
+    "total_fires": 3,
+    "county": "Siskiyou County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 33961.551883730004,
+    "total_fires": 9,
+    "county": "Siskiyou County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 40576.52192298,
+    "total_fires": 14,
+    "county": "Siskiyou County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 36115.53,
+    "total_fires": 3,
+    "county": "Siskiyou County",
+    "year": 2016
+  },
+  {
+    "total_acreage": 260710.69623003,
+    "total_fires": 39,
+    "county": "Siskiyou County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 440601.6084036701,
+    "total_fires": 39,
+    "county": "Siskiyou County",
+    "year": 2014
+  },
+  {
+    "total_acreage": 89.66872876,
+    "total_fires": 2,
+    "county": "Siskiyou County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 77301.41698002,
+    "total_fires": 3,
+    "county": "Siskiyou County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 132.84684717,
+    "total_fires": 2,
+    "county": "Siskiyou County",
+    "year": 2019
+  },
+  {
+    "total_acreage": 696.27274332,
+    "total_fires": 3,
+    "county": "Stanislaus County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 33728.113897560004,
+    "total_fires": 9,
+    "county": "Stanislaus County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 580.378664,
+    "total_fires": 3,
+    "county": "Stanislaus County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 126.75587008000001,
+    "total_fires": 3,
+    "county": "Stanislaus County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 38338.09817758,
+    "total_fires": 7,
+    "county": "Stanislaus County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 448.02259267,
+    "total_fires": 3,
+    "county": "Stanislaus County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 636.39807204,
+    "total_fires": 2,
+    "county": "Stanislaus County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 183.69634678,
+    "total_fires": 3,
+    "county": "Stanislaus County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 1122.45485364,
+    "total_fires": 1,
+    "county": "Stanislaus County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 915.2475254000001,
+    "total_fires": 3,
+    "county": "Stanislaus County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 604.52866849,
+    "total_fires": 1,
+    "county": "Stanislaus County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 1109.29356423,
+    "total_fires": 10,
+    "county": "Calaveras County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 435.83242908,
+    "total_fires": 3,
+    "county": "Calaveras County",
+    "year": 2000
+  },
+  {
+    "total_acreage": 6702.522520850001,
+    "total_fires": 4,
+    "county": "Calaveras County",
+    "year": 2001
+  },
+  {
+    "total_acreage": 457.1171724,
+    "total_fires": 7,
+    "county": "Calaveras County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 8065.0556405100015,
+    "total_fires": 8,
+    "county": "Calaveras County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 234.23347775000002,
+    "total_fires": 4,
+    "county": "Calaveras County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 2667.6232254700003,
+    "total_fires": 5,
+    "county": "Calaveras County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 277.96868376000003,
+    "total_fires": 4,
+    "county": "Calaveras County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 676.780054,
+    "total_fires": 5,
+    "county": "Calaveras County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 570.68356666,
+    "total_fires": 2,
+    "county": "Calaveras County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 72104.26632642,
+    "total_fires": 1,
+    "county": "Calaveras County",
+    "year": 2015
+  },
+  {
+    "total_acreage": 244.96908595999997,
+    "total_fires": 2,
+    "county": "Calaveras County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 11.35403467,
+    "total_fires": 1,
+    "county": "Calaveras County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 439.34029811,
+    "total_fires": 1,
+    "county": "Calaveras County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 123.91635487,
+    "total_fires": 1,
+    "county": "Calaveras County",
+    "year": 2018
+  },
+  {
+    "total_acreage": 1284.9281166600001,
+    "total_fires": 2,
+    "county": "Calaveras County",
+    "year": 2012
+  },
+  {
+    "total_acreage": 1289.01047338,
+    "total_fires": 5,
+    "county": "Yuba County",
+    "year": 2002
+  },
+  {
+    "total_acreage": 453.90732593999996,
+    "total_fires": 2,
+    "county": "Yuba County",
+    "year": 2004
+  },
+  {
+    "total_acreage": 16529.88756275,
+    "total_fires": 1,
+    "county": "Yuba County",
+    "year": 2017
+  },
+  {
+    "total_acreage": 14.60324308,
+    "total_fires": 1,
+    "county": "Yuba County",
+    "year": 2003
+  },
+  {
+    "total_acreage": 527.1001631299999,
+    "total_fires": 5,
+    "county": "Yuba County",
+    "year": 2007
+  },
+  {
+    "total_acreage": 21.13106996,
+    "total_fires": 1,
+    "county": "Yuba County",
+    "year": 2005
+  },
+  {
+    "total_acreage": 540.27598732,
+    "total_fires": 1,
+    "county": "Yuba County",
+    "year": 2006
+  },
+  {
+    "total_acreage": 2089.80300628,
+    "total_fires": 10,
+    "county": "Yuba County",
+    "year": 2008
+  },
+  {
+    "total_acreage": 4152.29500656,
+    "total_fires": 4,
+    "county": "Yuba County",
+    "year": 2009
+  },
+  {
+    "total_acreage": 1875.72125364,
+    "total_fires": 4,
+    "county": "Yuba County",
+    "year": 2010
+  },
+  {
+    "total_acreage": 589.84883873,
+    "total_fires": 8,
+    "county": "Yuba County",
+    "year": 2013
+  },
+  {
+    "total_acreage": 631.2116938300001,
+    "total_fires": 3,
+    "county": "Yuba County",
+    "year": 2011
+  },
+  {
+    "total_acreage": 497.02194325,
+    "total_fires": 3,
+    "county": "Yuba County",
+    "year": 2012
+  }
+]

@@ -1,0 +1,176 @@
+[
+    {
+        "image": "perimeter",
+        "name": "Perimeter",
+        "visibility": false,
+        "parameters": {
+            "type": "GeoJSON",
+            "data": "perimeter"
+        },
+        "id": 1,
+        "description": "Wildfire bounded region"
+    },
+    {
+        "image":"elevation",
+        "name": "Elevation",
+        "visibility": false,
+        "parameters":{
+           "type": "TileLayer",
+           "source": "wmts",
+           "data": "elevation",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/elevation/webmercator"
+        },
+        "id":2,
+        "description": "Represents land height, in meters, above mean sea level."
+    },
+    {
+        "image":"fbfm40",
+        "name": "fbfm40",
+        "visibility": false,
+        "parameters":{
+           "type": "TileLayer",
+           "source": "wmts",
+           "data": "fbfm40",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/fbfm40/webmercator"
+        },
+        "id":3,
+        "description": "Fire Behavior Fuel Model 40 Attributes"
+    },
+    {
+        "image":"vegetation",
+        "name": "Vegetation Type",
+        "visibility": false,
+        "parameters":{
+           "type": "TileLayer",
+           "source": "wmts",
+           "data": "evt",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/evt/webmercator"
+        },
+        "id":4,
+        "description": "Complexes of plant communities representing NatureServe's terrestrial Ecological Systems classification."
+    },
+    {
+        "image":"vegetationHeight",
+        "name": "Vegetation Height",
+        "visibility": false,
+        "parameters":{
+           "type": "TileLayer",
+           "source": "wmts",
+           "data": "evh",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/evh/webmercator"
+        },
+        "id":5,
+        "description": "Average height of the dominant vegetation."
+    },
+    {
+        "image":"vegetationCover",
+        "name": "Vegetation Cover",
+        "visibility": false,
+        "parameters":{
+           "type": "TileLayer",
+           "source": "wmts",
+           "data": "evc",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/evc/webmercator"
+        },
+        "id":6,
+        "description": "Vertically projected percent cover of the live canopy layer for a specific area."
+    },
+    {
+        "image":"aspect",
+        "name": "Aspect",
+        "visibility": true,
+        "parameters":{
+           "type": "TileLayer",
+           "source": "wmts",
+           "data": "aspect",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/aspect/webmercator"
+        },
+        "id":8,
+        "description": "Azimuth of the sloped surfaces across a landscape"
+    },
+    {
+        "image":"slope",
+        "name": "Slope",
+        "visibility": false,
+        "parameters":{
+           "type": "TileLayer",
+           "source": "wmts",
+           "data": "slope",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/slope/webmercator"
+        },
+        "id":9,
+        "description": "Change of elevation over a specific area"
+    },
+    {
+        "image": "roads",
+        "name": "Roads",
+        "visibility": false,
+        "parameters": {
+            "type": "GeoJSON",
+            "data": "roads"
+        },
+        "id": 10,
+        "description": ""
+    },
+    {
+        "image": "satellite",
+        "name": "Satellite",
+        "visibility": false,
+        "parameters": {
+            "type": "Heatmap"
+        },
+        "id": 11,
+        "description": ""
+    },
+    {
+        "image": "temperature",
+        "name": "Temperature",
+        "visibility": false,
+        "parameters": {
+            "type": "Heatmap"
+        },
+        "id": 12,
+        "description": ""
+    },
+    {
+        "image": "humidity",
+        "name": "Humidity",
+        "visibility": false,
+        "parameters": {
+            "type": "Heatmap"
+        },
+        "id": 13,
+        "description": ""
+    },
+    {
+        "image": "wind",
+        "name": "Wind",
+        "visibility": false,
+        "parameters": {
+            "type": "Custom"
+        },
+        "id": 14,
+        "description": ""
+    },
+    {
+        "image": "population",
+        "name": "Population",
+        "visibility": false,
+        "parameters": {
+            "type": "ScatterPlot"
+        },
+        "id": 15,
+        "description": ""
+    },
+    {
+        "image": "overview",
+        "name": "Overview",
+        "visibility": true,
+        "parameters": {
+            "type": "GeoJSON",
+            "data": "OverviewClusters"
+        },
+        "id": 16,
+        "description": ""
+    }
+]

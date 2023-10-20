@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        // "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "jsx": "preserve",
+        "outDir": "./dist",
+        "allowJs": true,
+        "lib": [
+            // "es6",
+            "dom",
+            "es2022"
+        ],
+        "types": [],
+        "paths": {
+            "@/*": ["./src/*"]
+          },
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./vite.config.js"
+, "../../@deprecated/editor.ts"    ],
+    "exclude": [
+        "./node_modules",
+        "./src/store/**/*"
+    ]
+}

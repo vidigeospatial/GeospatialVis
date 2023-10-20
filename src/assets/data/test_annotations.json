@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "location": [-119.983, 37.912],
+            "text": "The large and quick expansion in the morning of 8/22 may be attributed to the abundance of <b>HIGH</b> spreading GR2",
+            "timeStamp": 0.0716
+        },
+        {
+            "location": [-120.191, 37.903],
+            "text": "The fire expands to this area by around 8/24. But, notice that this area burns much further than its surrounding. We can hypothesize that this is due to the patch of <b>HIGH</b> spreading GR2 that extends to this part of the terrain. In contrast the surroundings are covered in <b>MODERATE</b> spreading TL6. Furthermore, the proximity to the town of Groveland most likely makes this area a high priority for fire supression efforts.",
+            "timeStamp": 0.308
+        },
+        {
+            "location": [-120.040262, 38.065357],
+            "text": "This is most likely a reporting error here. Since fire perimeters are measured by firefighters and reported, these errors are possible.",
+            "timeStamp": 0.42
+        },
+        {
+            "location": [-119.906630, 38.001342],
+            "text": "The fire reaches the lakes and reservoirs in the north east by around 8/28. Notice that they provide a natural barrier. These are designated NB8:  and has a <b>NA</b> spread rate. Since the other side is covered with <b>HIGH</b> spreading GS2 and <b>MODERATE</b> spreading GS1: it may have spread further if it weren't for the water bodies.",
+            "timeStamp": 0.3277
+        },
+        {
+            "location": [-119.769913, 37.829389],
+            "text": "The fire reaches this area by around 8/30. By this point in time, notice that spreading on the other points on the perimeter have slowed down substantially. However, again, the abundance of  <b>HIGH</b> spreading GR2 encourages the fire spread in this direction.",
+            "timeStamp": 0.48
+        },
+        {
+            "location": [-119.711400,37.879542 ],
+            "text": "After burning through much of GR2, the fire spread to this area by around 9/8. However notice that the fire spread slows down here. We hypothesize that this is related to the abudance of <b>LOW</b> spreading TL3, TL4, and TL7.",
+            "timeStamp": 0.5905
+        },
+        {
+            "location": [-119.734928, 37.792279],
+            "text": "Roads may have played a role in this part of the Rim Fire, as the non-smoothed perimeter lines up very well with the road in this area. This suggests that the spread have mave been stifled due to firefighter access.",
+            "timeStamp": 0.61
+        }
+    ]
+}

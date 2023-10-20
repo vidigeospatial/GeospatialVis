@@ -1,0 +1,53 @@
+[
+    {
+        "icon": "water-tap",
+        "name": "Baseline deliveries",
+        "visibility": true,
+        "type": "GeoJSON",
+        "parameters": {
+            "source": "wmts",
+            "data": "fbfm40",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/fbfm40/webmercator"
+        },
+        "id": 0,
+        "description": "",
+        "animated": true
+    },
+    {
+        "icon":"water-tap",
+        "name": "bl_h000 deliveries",
+        "visibility": false,
+        "type": "GeoJSON",
+        "parameters":{
+           "source": "wmts",
+           "data": "aspect",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/aspect/webmercator"
+        },
+        "id": 1,
+        "description": "",
+        "animated": true
+    },
+    {
+        "icon":"road-sign",
+        "name": "Difference in deliveries (bl_h000 - baseline)",
+        "visibility": false,
+        "type": "GeoJSON",
+        "id": 2,
+        "description": "",
+        "animated": true
+    },
+    {
+        "icon": "perimeter",
+        "name": "Baseline GW deliveries",
+        "visibility": false,
+        "type": "GeoJSon",
+        "parameters": {
+            "source": "wmts",
+            "data": "fbfm40",
+            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/fbfm40/webmercator"
+        },
+        "id": 0,
+        "description": "",
+        "animated": true
+    }
+]

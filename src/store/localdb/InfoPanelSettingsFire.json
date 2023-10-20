@@ -1,0 +1,97 @@
+[
+    {
+        "type": "checkbox",
+        "id": "perimeter",
+        "title": "Perimeter Layer", 
+        "info": "The perimeter layer visualizes the progession of the selected wildfire as animation over time. We provide the option to smooth each perimeter to highlight general trends.", 
+        "options": [ 
+            { "name": "Smooth Perimeters", "emitVal": "Perimeter_Smooth", "default": true } 
+        ] 
+    },
+    {
+        "type": "checkbox-dropdown", 
+        "id": "wind",
+        "title": "Wind Layer", 
+        "info": "The wind layer visualizes wind data in the area of the selected wildfire. We provide two options to visualize this data.", 
+        "options": [ 
+            { "type": "dropdown", "name": "Particle Advection Color Setting", "emitVal": "Wind_Particle_Colors", "values": ["No Color", "Temperature", "Humidity"], "default": "No Color"} 
+        ],
+        "scales": [
+            { "variable": "Temperature in Celsius",
+                "colorRange": [
+                    [59, 76, 192],
+                    [98, 130, 234],
+                    [141, 176, 254],
+                    [184, 208, 249],
+                    [221, 221, 221],
+                    [245, 196, 173],
+                    [244, 154, 123],
+                    [222, 96, 77],
+                    [180, 4, 38]
+                ],
+                "labels": ["20", "25", "30", "35", "40"]
+            },
+            { "variable": "Humidity in Percentage",
+                "colorRange": [
+                    [59, 76, 192],
+                    [98, 130, 234],
+                    [141, 176, 254],
+                    [184, 208, 249],
+                    [221, 221, 221],
+                    [245, 196, 173],
+                    [244, 154, 123],
+                    [222, 96, 77],
+                    [180, 4, 38]
+                ],
+                "labels": ["0", "25", "50", "75", "100"]
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "id": "satellite",
+        "title": "Satellite Layer",
+        "info": "Satellite data provides the confidence of a fire and the power of the fire at each geographic location. (as logitude/latitude)",
+        "scales": [
+            { "variable": "Satellite-measured power of fire",
+                "colorRange": [
+                    [255, 245, 240],
+                    [254, 225, 211],
+                    [253, 196, 173],
+                    [252, 161, 131],
+                    [251, 125, 94],
+                    [246, 87, 63],
+                    [227, 50, 41],
+                    [197, 25, 28],
+                    [159, 14, 21],
+                    [108, 1, 14]
+                ],
+                "labels": ["Weakest", "", "", "", "Strongest"]
+            }
+        ]
+    },
+    {
+        "type": "text", 
+        "id": "fbfm",
+        "title": "Fire Behavior Fuel Model (FBFM) Layer", 
+        "info": "Scott and Burgans (2005) FBFM model identified 40 fuel model based on their terrain qualities. More info <a href='https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/10-mapstudio/files/fbfmsummaries.htm'>here</a>."
+    },
+    {
+        "type": "text", 
+        "id": "Roads",
+        "title": "Roads Layer", 
+        "info": "Roads around the selected wildfire is rendered as a line."
+    },
+    {
+        "type": "text",
+        "id": "Aspect",
+        "title": "Aspect Layer", 
+        "info": "Aspect is the direction of the slope of the land?"
+    },
+    {
+        "type": "text",
+        "id": "Elevation",
+        "title": "Elevation Layer", 
+        "info": "Elevation is the height of the land above sea level?"
+    }
+]
