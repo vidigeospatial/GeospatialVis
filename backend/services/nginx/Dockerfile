@@ -1,0 +1,7 @@
+FROM nginx:1.23-alpine
+# RUN rm /etc/nginx/sites-enabled/default
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d
+
+EXPOSE 80:80
+# CMD ["nginx", "-g", "daemon off;"]

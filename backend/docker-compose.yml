@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  gunicorn:
+    build: ./services/gunicorn
+    command: gunicorn --bind 0.0.0.0:6010 wsgi:app 
+    volumes:
+      - ./services/gunicorn:/code/
+    expose:
+      - 6010
+    env_file:
+      - ./.env.dev
+    networks: 
+      - infovisnet
+  nginx:
+    build: ./services/nginx
+    container_name: geospatialvis-proxy
+    depends_on:
+      - gunicorn
+    networks: 
+      - infovisnet
+
+networks:
+  infovisnet:
+    name: infovisnet
