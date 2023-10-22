@@ -1,25 +1,35 @@
 import { MapState } from '@/types/mapTypes'
+import axios, { AxiosResponse } from "axios";
 import type { Coords, LayerProp, InfoPanelProps, MapParamsType } from '@/types/mapTypes'
 import type { LayersList, MapViewState, Layer } from '@deck.gl/core/typed'
-import * as d3 from "d3"
+import { 
+    scaleLinear, 
+    interpolateReds, 
+    interpolateBlues, 
+    interpolatePRGn, 
+    ScaleTime, 
+    scaleTime,
+    timeYear,
+    TimeInterval
+} from "d3"
 import InfoPanelSettings from '@/store/localdb/InfoPanelSettingsWater.json'
 
 import { useAttrs, toRaw, Ref } from 'vue'
 
 import { useMap } from '@/store/map'
-import { useData } from '@/store/data'
+// import { useData } from '@/store/data'
 // import { useEditor } from '@/store/editor'
-import { useOverviewMap } from "@/store/overview"
+// import { useOverviewMap } from "@/store/overview"
 
-import { vueTileLayer } from "../layers/TileLayer"
-import { vueAnimatedProps } from "../layers/AnimatedProps_Fire"
-import { vueGeoJsonLayer } from '../layers/GeoJsonLayer'
-import { vueWeatherLayer } from '../layers/WeatherLayer'
-import { AnimatedPathLayer } from '../layers/AnimatedPath'
-import { AnimatedGridCellLayer } from '../layers/AnimatedGridCell'
-import { AnimatedHeatmapLayer } from '../layers/AnimatedHeatmap'
+// import { vueTileLayer } from "../layers/TileLayer"
+// import { vueAnimatedProps } from "../layers/AnimatedProps_Fire"
+// import { vueGeoJsonLayer } from '../layers/GeoJsonLayer'
+// import { vueWeatherLayer } from '../layers/WeatherLayer'
+// import { AnimatedPathLayer } from '../layers/AnimatedPath'
+// import { AnimatedGridCellLayer } from '../layers/AnimatedGridCell'
+// import { AnimatedHeatmapLayer } from '../layers/AnimatedHeatmap'
 import { DraggableIconLayer } from '../layers/DraggableIconLayer'
-import ParticleLayer from '../layers/ParticleAdvection/particle-layer'
+// import ParticleLayer from '../layers/ParticleAdvection/particle-layer'
 import { TextLayer, IconLayer } from '@deck.gl/layers'
 
 import { GeoJsonLayer } from '@deck.gl/layers/typed'
@@ -215,9 +225,9 @@ export default class WaterContentManager implements IContentManager {
                             deck.setProps({ controller: { dragPan: false } })
                             annotationDragged.value = true
                         },
-                        onDrag: (info, event) => {
-                            this.updateAnnotationLocation(info)
-                        },
+                        // onDrag: (info, event) => {
+                        //     this.updateAnnotationLocation(info)
+                        // },
                         onDragEnd: (info, event) => {
                             deck.setProps({ controller: true })
                             annotationDragged.value = false
@@ -238,16 +248,16 @@ export default class WaterContentManager implements IContentManager {
         })
 
 
-        const colorInterp = (unmetDemand) => d3.interpolateReds(
-            d3.scaleLinear().domain([-250, 10]).range([1, 0])(unmetDemand)
+        const colorInterp = (unmetDemand) => interpolateReds(
+            scaleLinear().domain([-250, 10]).range([1, 0])(unmetDemand)
         ).replace(/[^\d,]/g, '').split(',').map(d => Number(d))
 
-        const colorInterpGW = (groundwater) => d3.interpolateBlues(
-            d3.scaleLinear().domain([-250, 700]).range([0, 1])(groundwater)
+        const colorInterpGW = (groundwater) => interpolateBlues(
+            scaleLinear().domain([-250, 700]).range([0, 1])(groundwater)
         ).replace(/[^\d,]/g, '').split(',').map(d => Number(d))
 
-        const colorInterpDifference = (unmetDemand) => d3.interpolatePRGn(
-            d3.scaleLinear().domain([-50, 50]).range([0, 1])(unmetDemand)
+        const colorInterpDifference = (unmetDemand) => interpolatePRGn(
+            scaleLinear().domain([-50, 50]).range([0, 1])(unmetDemand)
         ).replace(/[^\d,]/g, '').split(',').map(d => Number(d))
 
         let index = Math.round(currentTime * 1200)
@@ -345,17 +355,17 @@ export default class WaterContentManager implements IContentManager {
     }
 
     // Get the timeScale and inverseTimeScale, in order
-    getTimeScales(): [d3.ScaleTime<number, Date>, d3.ScaleTime<Date, number>] {
+    getTimeScales(): [ScaleTime<number, Date>, ScaleTime<Date, number>] {
         //temp
         // return [d3.scaleTime().domain([new Date(2018, 0, 1), new Date(2018, 11, 31)]).range([0, 1]), d3.scaleTime().domain([new Date(2018, 0, 1), new Date(2018, 11, 31)]).range([0, 1])]
 
         const start = '10/31/1921'
         const end = '9/30/2021'
 
-        let timeScale = d3.scaleTime<number, Date>()
+        let timeScale = scaleTime<number, Date>()
             .range([new Date(start), new Date(end)])
             .domain([0, 1])
-        let inverseTimeScale = d3.scaleTime<Date, number>()
+        let inverseTimeScale = scaleTime<Date, number>()
             .domain([new Date(start), new Date(end)])
             .range([0, 1])
         return [timeScale, inverseTimeScale]
@@ -395,13 +405,13 @@ export default class WaterContentManager implements IContentManager {
             }
         })
     }
-    getTimeSliderScaleParams() : [ d3.ScaleTime<number, number>, d3.TimeInterval, string ] {
+    getTimeSliderScaleParams() : [ ScaleTime<number, number>, TimeInterval, string ] {
         const start = '10/31/1921'
         const end = '9/30/2021'
-        let scale = d3.scaleTime()
+        let scale = scaleTime()
             .domain([new Date(start), new Date(end)])
 
-        return [ scale, d3.timeYear.every(5), "%Y" ]
+        return [ scale, timeYear.every(5), "%Y" ]
     }
     formatTimeString(date: Date): string {
         return `${date.toLocaleString('default', { month: 'short' })} ${date.getFullYear()}`

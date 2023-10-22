@@ -1,7 +1,7 @@
 <template>
     <div class="h-screen flex items-center justify-center text-black flex-col">
         <div class="text-5xl m-5 font-bold">
-            Geospatial Data Demos (WIP)
+            Geospatial Data Vis Demos (WIP)
         </div>
         <div class="mx-auto grid grid-cols-2">
             <PageCard

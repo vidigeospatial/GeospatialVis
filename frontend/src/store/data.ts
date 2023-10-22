@@ -16,6 +16,7 @@ export const useData = defineStore('dataStore', {
         data: {} as Record<string, DataBlock>
     }),
     actions: {
+        // Need to generalize this
         createFireData(fire_id: string): void{
             this.data[fire_id] =  {
                 'roads': [],

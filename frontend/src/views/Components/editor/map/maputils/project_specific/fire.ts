@@ -2,7 +2,17 @@ import { MapState } from '@/types/mapTypes'
 import { Slide } from '@/types/storiesTypes'
 import type { Coords, LayerProp, InfoPanelProps, MapParamsType } from '@/types/mapTypes'
 import type { LayersList, MapViewState, Layer } from '@deck.gl/core/typed'
-import * as d3 from "d3"
+// import * as d3 from "d3"
+import { 
+    scaleLinear, 
+    interpolateReds, 
+    interpolateBlues, 
+    interpolatePRGn, 
+    ScaleTime, 
+    scaleTime,
+    timeWeek,
+    TimeInterval
+} from "d3"
 import InfoPanelSettings from '@/store/localdb/InfoPanelSettingsFire.json'
 
 import { useAttrs, toRaw, Ref } from 'vue'
@@ -15,7 +25,7 @@ import { useOverviewMap } from "@/store/overview"
 import { vueTileLayer } from "../layers/TileLayer"
 import { vueAnimatedProps } from "../layers/AnimatedProps_Fire"
 import { vueGeoJsonLayer } from '../layers/GeoJsonLayer'
-import { vueWeatherLayer } from '../layers/WeatherLayer'
+// import { vueWeatherLayer } from '../layers/WeatherLayer'
 import { AnimatedPathLayer } from '../layers/AnimatedPath'
 import { AnimatedGridCellLayer } from '../layers/AnimatedGridCell'
 import { AnimatedHeatmapLayer } from '../layers/AnimatedHeatmap'
@@ -208,15 +218,15 @@ export default class FireContentManager implements IContentManager {
     }
 
     // Get the timeScale and inverseTimeScale, in order
-    getTimeScales(): [d3.ScaleTime<number, Date>, d3.ScaleTime<Date, number>] {
+    getTimeScales(): [ScaleTime<number, Date>, ScaleTime<Date, number>] {
         //temp
         // return [d3.scaleTime().domain([new Date(2018, 0, 1), new Date(2018, 11, 31)]).range([0, 1]), d3.scaleTime().domain([new Date(2018, 0, 1), new Date(2018, 11, 31)]).range([0, 1])]
 
-        let timeScale = d3.scaleTime<number, Date>()
+        let timeScale = scaleTime<number, Date>()
             .domain([0, 1])
             .range([this.animatedProps['AnimatedPath']['data'][0]['time'],
                 this.animatedProps['AnimatedPath']['data'][this.animatedProps['AnimatedPath']['data'].length - 1]['time']])
-        let inverseTimeScale = d3.scaleTime<Date, number>()
+        let inverseTimeScale = scaleTime<Date, number>()
             .range([0, 1])
             .domain([this.animatedProps['AnimatedPath']['data'][0]['time'], this.animatedProps['AnimatedPath']['data'][this.animatedProps['AnimatedPath']['data'].length - 1]['time']])
         return [timeScale, inverseTimeScale]
@@ -289,11 +299,11 @@ export default class FireContentManager implements IContentManager {
             }
         })
     }
-    getTimeSliderScaleParams() : [ d3.ScaleTime<number, number>, d3.TimeInterval, string ] {
-        let scale = d3.scaleTime<number, number>()
+    getTimeSliderScaleParams() : [ ScaleTime<number, number>, TimeInterval, string ] {
+        let scale = scaleTime<number, number>()
             .domain([this.animatedProps['AnimatedPath']['data'][0]['time'],
                 this.animatedProps['AnimatedPath']['data'][this.animatedProps['AnimatedPath']['data'].length - 1]['time']])
-        return [ scale, d3.timeWeek.every(1), "%b %d" ]
+        return [ scale, timeWeek.every(1), "%b %d" ]
     }
     formatTimeString(date: Date): string {
         return `${date.toLocaleString('default', { month: 'short' })} ${date.getDate()} ${date.getHours()}:00`

@@ -278,7 +278,15 @@ export class Water implements MapState.WaterData{
     data: MapState.DBData
     layerList: MapState.Layer<MapState.TileMap | MapState.GeoJSONMap>[]
     annotations: MapState.annotationData[]
+
+    difference: MapState.DBData // = new DBData();
+    baseline: MapState.DBData // = new DBData();
+    comparison: MapState.DBData //  = new DBData();
+    grounwater: MapState.DBData 
+
     currentTime: number
+
+    // axios.get("http://infovis.cs.ucdavis.edu/wildfire/api/firedash/", config)
 
     constructor(annotations: MapState.annotationData[]){
         this.layerList = JSON.parse(JSON.stringify(singleWaterLL))
