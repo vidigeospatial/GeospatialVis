@@ -19,7 +19,8 @@
             id="singleWater-content"
             class="flex-grow"
         >
-            <SingleMap />
+            <SingleMap v-if="isDataReady" />
+            <LoadingScreen v-else />
         </div>
     </div>
 </template>
@@ -29,8 +30,9 @@
 
 import Tooltip from "./ui/Tooltip.vue"
 import SingleMap from "./map/SingleMap.vue"
+import LoadingScreen from "./ui/Loading.vue"
 import { useMap } from "@/store/map"
-import { provide, reactive, onUnmounted, onMounted } from 'vue'
+import { provide, reactive, onUnmounted, computed } from 'vue'
 import { MAP_PARAMS_KEY } from "@/injectionKeys"
 import { Water, WaterMap } from "@/store/classes/map"
 
@@ -61,6 +63,11 @@ const mapParams = reactive({
 })
 
 provide(MAP_PARAMS_KEY, mapParams)
+
+const isDataReady = computed( 
+    () => useMapStore.isDataReady(props.mapID, props.mapType, 'unmetdemand') && 
+    useMapStore.isDataReady(props.mapID, props.mapType, 'groundwater')  &&
+    useMapStore.isDataReady(props.mapID, props.mapType, 'shapes'))
 
 onUnmounted(() =>{
     // Need to make sure to set this map entry as not active

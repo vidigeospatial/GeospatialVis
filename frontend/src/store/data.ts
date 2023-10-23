@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-type DataBlock = {
+type FireDataBlock = {
     roads: any[];
     temperature: any[];
     humidity: any[];
@@ -10,15 +10,24 @@ type DataBlock = {
     det: any[];
 }
 
+type WaterDataBlock = {
+    unmetdemand: any[];
+    groundwater: any[];
+}
+
+
 export const useData = defineStore('dataStore', {
     // Maps fire_id to data
     state: () => ({
-        data: {} as Record<string, DataBlock>
+        data: {} as Record<string, FireDataBlock | WaterDataBlock>
     }),
     actions: {
+        createEntry(id: string): void{
+            this.data[id] = {}
+        },
         // Need to generalize this
-        createFireData(fire_id: string): void{
-            this.data[fire_id] =  {
+        createFireData(fireID: string): void{
+            this.data[fireID] =  {
                 'roads': [],
                 'temperature': [],
                 'humidity': [],
@@ -28,17 +37,33 @@ export const useData = defineStore('dataStore', {
                 'det': []
             }
         },
-        updateFireData( fire_id: string, data: Array<any>, data_type: string): void{
-            if (this.data[fire_id] == undefined){
-                this.createFireData(fire_id)
+        createWaterData(id: string): void{
+            this.data[id] =  {
+                'unmetdemand': {},
+                'groundwater': {},
+                'shapes': {}
+
             }
-            this.data[fire_id][data_type] = data
         },
-        getPerimeterData(fire_id: string): any[]{
-            return this.data[fire_id]['perimeter']
+        updateData( id: string, data: any, fieldName: string, dataType: string): void{
+            if (this.data[id] == undefined){
+                if (dataType == 'fire')
+                    this.createFireData(id)
+                else if (dataType == 'water')
+                    this.createWaterData(id)
+                else {
+                    // raise error
+                    console.log("Error: Invalid data type")
+                }
+
+            }
+            this.data[id][fieldName] = data
         },
-        getData(fire_id: string, data_type: string): any[]{
-            return this.data[fire_id][data_type]
+        getPerimeterData(fireID: string): any[]{
+            return this.data[fireID]['perimeter']
+        },
+        getData(id: string, dataType: string): any[]{
+            return this.data[id][dataType]
         }
     }
 })

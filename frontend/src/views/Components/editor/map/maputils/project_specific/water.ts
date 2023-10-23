@@ -29,16 +29,17 @@ import { useMap } from '@/store/map'
 // import { AnimatedGridCellLayer } from '../layers/AnimatedGridCell'
 // import { AnimatedHeatmapLayer } from '../layers/AnimatedHeatmap'
 import { DraggableIconLayer } from '../layers/DraggableIconLayer'
+import { useData } from '@/store/data'
 // import ParticleLayer from '../layers/ParticleAdvection/particle-layer'
 import { TextLayer, IconLayer } from '@deck.gl/layers'
 
 import { GeoJsonLayer } from '@deck.gl/layers/typed'
 import { IContentManager } from './project_specific.interface'
 
-import baselineUnmet from '@/assets/data/baseline_unmetdemand.json'
-import comparisonUnmet from '@/assets/data/comparison_unmetdemand.json'
-import differenceUnmet from '@/assets/data/difference_unmetdemand.json'
-import baselineGroundwater from '@/assets/data/baseline_groundwater.json'
+// import baselineUnmet from '@/assets/data/baseline_unmetdemand.json'
+// import comparisonUnmet from '@/assets/data/comparison_unmetdemand.json'
+// import differenceUnmet from '@/assets/data/difference_unmetdemand.json'
+// import baselineGroundwater from '@/assets/data/baseline_groundwater.json'
 
 export default class WaterContentManager implements IContentManager {
     useDataStore: any
@@ -57,6 +58,7 @@ export default class WaterContentManager implements IContentManager {
         layerDescription: MapState.Layer<any>[]
     ) {
         this.useMapStore = useMap()
+        this.useDataStore = useData()
         // this.useEditorStore = useEditor()
 
         this.attrs = useAttrs()
@@ -71,96 +73,141 @@ export default class WaterContentManager implements IContentManager {
     }
 
     parseData () {
-        let featureCollectionBaseline = {
-            "type": 'FeatureCollection',
-            "features": []
-        }
-        let featureCollectionComparison = {
-            "type": 'FeatureCollection',
-            "features": []
-        }
-        let featureCollectionDifference = {
-            "type": 'FeatureCollection',
-            "features": []
-        }
-        let featureCollectionBaselineGroundwater = {
-            "type": 'FeatureCollection',
-            "features": []
-        }
-        baselineUnmet.forEach(
-            (d: any) => {
-                let parsed = JSON.parse(d[1200])
-    
-                featureCollectionBaseline.features.push({
-                    type: 'Feature',
-                    properties: {
-                        unmetDemand: Object.values(d).slice(0, 1200),
-                    },
-                    geometry: {
-                        type: parsed.type,
-                        coordinates: parsed.coordinates
-                    }
-                })
-    
-            }
-        )
-    
-        comparisonUnmet.forEach(
-            (d: any) => {
-                let parsed = JSON.parse(d[1200])
-    
-                featureCollectionComparison.features.push({
-                    type: 'Feature',
-                    properties: {
-                        unmetDemand: Object.values(d).slice(0, 1200),
-                    },
-                    geometry: {
-                        type: parsed.type,
-                        coordinates: parsed.coordinates
-                    }
-                })
-            }
-        )
-    
-        differenceUnmet.forEach(
-            (d: any) => {
-                let parsed = JSON.parse(d[1200])
-    
-                featureCollectionDifference.features.push({
-                    type: 'feature',
-                    properties: {
-                        difference: Object.values(d).slice(0, 1200),
-                    },
-                    geometry: {
-                        type: parsed.type,
-                        coordinates: parsed.coordinates
-                    }
-                })
-    
-            }
-        )
+        // let featureCollectionBaseline = {
+        //     "type": 'FeatureCollection',
+        //     "features": []
+        // }
+        // let featureCollectionComparison = {
+        //     "type": 'FeatureCollection',
+        //     "features": []
+        // }
+        // let featureCollectionDifference = {
+        //     "type": 'FeatureCollection',
+        //     "features": []
+        // }
+        // let featureCollectionBaselineGroundwater = {
+        //     "type": 'FeatureCollection',
+        //     "features": []
+        // }
 
-        baselineGroundwater.forEach(
-            (d: any) => {
-                let parsed = JSON.parse(d[1200])
+        let unmetdemand = this.useDataStore.getData('water', 'unmetdemand')
+        let groundwater = this.useDataStore.getData('water', 'groundwater')
+        let shapes = this.useDataStore.getData('water', 'shapes')
+        shapes['demand_units'].features = shapes['demand_units'].features.filter(d => d.properties.DU_ID in unmetdemand['baseline'])
+
+        let baseline_unmetdemand = shapes['demand_units'].features.map ( d => {
+            return {
+                ...d,
+                properties: {
+                    unmetDemand: Object.values(unmetdemand['baseline'][d.properties.DU_ID])
+                }
+            }   
+        })
+        let scenario_unmetdemand = shapes['demand_units'].features.map ( d => {
+            return {
+                ...d,
+                properties: {
+                    unmetDemand: Object.values(unmetdemand['scenario'][d.properties.DU_ID])
+                }
+            }   
+        })
+        let comparison_unmetdemand = shapes['demand_units'].features.map ( d => {
+            let baseline: number[] = Object.values(unmetdemand['baseline'][d.properties.DU_ID])
+            return {
+                ...d,
+                properties: {
+                    difference: Object.values(unmetdemand['scenario'][d.properties.DU_ID]).map(
+                        (element: number, index: number) => element - baseline[index]
+                    )
+                }
+            }   
+        })
+        let baseline_groundwater = shapes['groundwater'].features.map ( d => {
+            return {
+                ...d,
+                properties: {
+                    groundwater: Object.values(groundwater['baseline'][d.properties.elem_id])
+                }
+            }   
+
+        })
+
+
+        // unmetdemand.forEach(
+        //     (d: any) => {
+        //         let parsed = JSON.parse(d[1200])
     
-                featureCollectionBaselineGroundwater.features.push({
-                    type: 'feature',
-                    properties: {
-                        groundwater: Object.values(d).slice(0, 1200),
-                    },
-                    geometry: {
-                        type: parsed.type,
-                        coordinates: parsed.coordinates
-                    }
-                })
+        //         featureCollectionBaseline.features.push({
+        //             type: 'Feature',
+        //             properties: {
+        //                 unmetDemand: Object.values(d).slice(0, 1200),
+        //             },
+        //             geometry: {
+        //                 type: parsed.type,
+        //                 coordinates: parsed.coordinates
+        //             }
+        //         })
     
-            }
-        )
-        this.data['baseline'] = featureCollectionBaseline
-        this.data['comparison'] = featureCollectionComparison
-        this.data['difference'] = featureCollectionDifference
-        this.data['baselineGroundwater'] = featureCollectionBaselineGroundwater
+        //     }
+        // )
+    
+        // comparisonUnmet.forEach(
+        //     (d: any) => {
+        //         let parsed = JSON.parse(d[1200])
+    
+        //         featureCollectionComparison.features.push({
+        //             type: 'Feature',
+        //             properties: {
+        //                 unmetDemand: Object.values(d).slice(0, 1200),
+        //             },
+        //             geometry: {
+        //                 type: parsed.type,
+        //                 coordinates: parsed.coordinates
+        //             }
+        //         })
+        //     }
+        // )
+    
+        // differenceUnmet.forEach(
+        //     (d: any) => {
+        //         let parsed = JSON.parse(d[1200])
+    
+        //         featureCollectionDifference.features.push({
+        //             type: 'feature',
+        //             properties: {
+        //                 difference: Object.values(d).slice(0, 1200),
+        //             },
+        //             geometry: {
+        //                 type: parsed.type,
+        //                 coordinates: parsed.coordinates
+        //             }
+        //         })
+    
+        //     }
+        // )
+
+        // baselineGroundwater.forEach(
+        //     (d: any) => {
+        //         let parsed = JSON.parse(d[1200])
+    
+        //         featureCollectionBaselineGroundwater.features.push({
+        //             type: 'feature',
+        //             properties: {
+        //                 groundwater: Object.values(d).slice(0, 1200),
+        //             },
+        //             geometry: {
+        //                 type: parsed.type,
+        //                 coordinates: parsed.coordinates
+        //             }
+        //         })
+    
+        //     }
+        // )
+
+        this.data['baseline'] = baseline_unmetdemand
+        this.data['comparison'] = scenario_unmetdemand
+        this.data['difference'] = comparison_unmetdemand
+        this.data['baselineGroundwater'] = baseline_groundwater
     }
 
     getAllStaticLayers(layerDescription: MapState.Layer<any>[]): LayersList {
@@ -259,6 +306,8 @@ export default class WaterContentManager implements IContentManager {
         const colorInterpDifference = (unmetDemand) => interpolatePRGn(
             scaleLinear().domain([-50, 50]).range([0, 1])(unmetDemand)
         ).replace(/[^\d,]/g, '').split(',').map(d => Number(d))
+
+
 
         let index = Math.round(currentTime * 1200)
         let layerBaseline = new GeoJsonLayer({

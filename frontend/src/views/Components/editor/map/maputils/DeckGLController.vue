@@ -11,7 +11,7 @@ import { DECKGL_SETTINGS } from './settings/defaultSettings'
 import { vueAnnotationProps } from "./layers/Annotations"
 import InfoPanel from '../../ui/InfoPanel.vue'
 // import SMInfoPanel from '../../ui/SMInfoPanel.vue'
-// import AnnotationPanel from '../../ui/AnnotationPanel.vue'
+import AnnotationPanel from '../../ui/AnnotationPanel.vue'
 import { MAP_MODE_KEY, MAP_TIME_KEY, MAP_VIEWSTATE_KEY, MAP_PARAMS_KEY, MAP_RESIZE_KEY, MAP_EDITOR_KEY, CONTENT_MANAGER_KEY } from "@/injectionKeys"
 import { MapState } from '@/types/mapTypes'
 
@@ -372,10 +372,10 @@ const onRightClick = (event) => {
             :settings="ContentManager.getInfoPanelSettings()"
             @settings-changed="settingsChanged"
         />
-        <SMInfoPanel
+        <!-- <SMInfoPanel
             v-if="SM"
             :text="SMInfoPanelText"
-        />
+        /> -->
             
         <slot />
         <div>
