@@ -5,7 +5,7 @@
 /backend/__pycache__/*
 /docker-ql/env
 node_modules/
-dist/
+# dist/
 */@deprecated/
 *.lockb
 
