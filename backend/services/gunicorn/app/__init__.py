@@ -71,7 +71,7 @@ def get_data(target):
         for i in range(0, len(df.columns), col_per_group):
             group = df.iloc[:, i:i + col_per_group]
 
-            new_col_name = group.columns[0].split(":")[1][1]
+            new_col_name = group.columns[0].split(":")[1][1:]
             result_df[new_col_name] = group.iloc[:, 0]
         ret = result_df.to_json()
     elif target == 'bl_h000_groundwater':
@@ -81,7 +81,7 @@ def get_data(target):
         for i in range(0, len(df.columns), col_per_group):
             group = df.iloc[:, i:i + col_per_group]
 
-            new_col_name = group.columns[0].split(":")[1][1]
+            new_col_name = group.columns[0].split(":")[1][1:]
             result_df[new_col_name] = group.iloc[:, 0]
         print(result_df)
 
