@@ -10,6 +10,7 @@ proj_path = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['SERVER_NAME'] = 'infovis.cs.ucdavis.edu'
+#app.config['SERVER_NAME'] = 'vidigeospatial.github.io'
 
 CORS(app)
 app.url_map.strict_slashes = False
@@ -91,6 +92,36 @@ def get_data(target):
             "Invalid data request",
             status=400
         )
+    return ret
+
+@app.route("/data/scenario/<target_scenario>/<target_data>")
+def get_data_scenario(target_scenario, target_data):
+    if target_scenario not in ['CS3_BL','bl_h000', 'LTO_BA_EXP1_2022MED', 'CS3_ALT3_2022med_L2020ADV']:
+        return Response(
+            "Invalid target scenario",
+            status=400
+        )
+    elif target_data not in ['unmetdemand']:
+        return Response(
+            "Invalid target data",
+            status=400
+        )
+    else:
+        df = pd.read_csv(f'{proj_path}/data/{target_scenario}_DemandDeliveries.csv').iloc[:, 1:]
+        print(df)
+        result_df = pd.DataFrame()
+        # Is a hack, need to standardize this
+        col_per_group = 3 if 'dgTotVar' in df.columns[2] else 2
+        print('col_per_group', col_per_group)
+        for i in range(0, len(df.columns), col_per_group):
+            group = df.iloc[:, i:i + col_per_group]
+
+            new_col_name = f"{'_'.join(group.columns[0].split('_')[:2])}"
+            unmet_demand = group.iloc[:, -1] - group.iloc[:, 0]
+            mask = group.iloc[:, -1] == -902
+            unmet_demand[mask] = 0
+            result_df[new_col_name] = unmet_demand
+        ret = result_df.to_json()
     return ret
 
 @app.route("/shapes/<target>")
