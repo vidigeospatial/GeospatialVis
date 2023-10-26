@@ -11,6 +11,9 @@ import * as d3 from "d3"
 
 const ENDPOINT = "http://infovis.cs.ucdavis.edu/wildfire/api/firedash/"
 
+const doesDataExist = (id: string, dataType: string) => id in useDataStore().data && useDataStore().data[id][dataType] != undefined
+
+
 // class DBData implements MapState.DBData {
 //     isFetched: boolean;
 //     data: Array<any>
@@ -64,7 +67,6 @@ export class SingleFire implements MapState.SingleFire {
 
         const classThis = this
 
-        const doesDataExist = (fireID: string, dataName: string) => fireID in useDataStore().data && useDataStore().data[fireID][dataName] != undefined
 
         //// --- PERIMETER -----
         // Check if the perimeter data is already in the store
@@ -89,7 +91,7 @@ export class SingleFire implements MapState.SingleFire {
                         centroid: item.data.centroid['coordinates']
                     })
                 })
-                useDataStore().updateFireData(fireID, parsedPerimeter, 'perimeter')
+                useDataStore().updateData(fireID, parsedPerimeter, 'perimeter', 'fire')
                 classThis.perimeter.isFetched = true
                 console.log('Exiting fetch perimeters')
             })
@@ -114,7 +116,7 @@ export class SingleFire implements MapState.SingleFire {
                         processed_confidence: item.processed_confidence
                     })
                 })
-                useDataStore().updateFireData(fireID, frpData, 'frp')
+                useDataStore().updateData(fireID, frpData, 'frp', 'fire')
                 classThis.frp.isFetched = true
                 console.log('Exiting fetch FRP')
             })
@@ -129,7 +131,7 @@ export class SingleFire implements MapState.SingleFire {
             this.fetchRoads().then(function(response: AxiosResponse<any>){
                 let road_data = response.data.map( (item: any) => 
                     item.road )
-                useDataStore().updateFireData(fireID, road_data, 'roads')
+                useDataStore().updateData(fireID, road_data, 'roads', 'fire')
                 classThis.roads.isFetched = true
                 console.log('Exiting fetch Roads')
             })
@@ -279,19 +281,99 @@ export class Water implements MapState.WaterData{
     layerList: MapState.Layer<MapState.TileMap | MapState.GeoJSONMap>[]
     annotations: MapState.annotationData[]
 
-    difference: MapState.DBData // = new DBData();
-    baseline: MapState.DBData // = new DBData();
-    comparison: MapState.DBData //  = new DBData();
-    grounwater: MapState.DBData 
+    unmetdemand: MapState.DBData // = new DBData();
+    groundwater: MapState.DBData //  = new DBData();
+
+    shapes: MapState.DBData
+
+    // In store -> { 'unmetdemand': { 'baseline' : [], 'scenario': [] }}
 
     currentTime: number
 
     // axios.get("http://infovis.cs.ucdavis.edu/wildfire/api/firedash/", config)
 
+
     constructor(annotations: MapState.annotationData[]){
         this.layerList = JSON.parse(JSON.stringify(singleWaterLL))
         this.annotations = annotations
         this.currentTime = undefined
+
+        this.unmetdemand = reactive({ isFetched: false })
+        this.groundwater = reactive({ isFetched: false })
+        this.shapes = reactive({ isFetched: false })
+
+        const classThis = this
+
+        if (!doesDataExist('water', 'unmetdemand')){
+            Promise.all(this.fetchUnmetdemand()).then(function(response: AxiosResponse<any>[]){
+                let unmetDemand = {
+                    'baseline': response[0].data,
+                    'scenario': response[1].data
+                }
+                useDataStore().updateData('water', unmetDemand, 'unmetdemand', 'water')
+                classThis.unmetdemand.isFetched = true
+            })
+        } else {
+            classThis.unmetdemand.isFetched = true
+        }
+
+        if (!doesDataExist('water', 'groundwater')){
+            Promise.all(this.fetchGroundwater()).then(function(response: AxiosResponse<any>[]){
+                let groundwater = {
+                    'baseline': response[0].data,
+                    'scenario': response[1].data
+                }
+                useDataStore().updateData('water', groundwater, 'groundwater', 'water')
+                classThis.groundwater.isFetched = true
+            })
+        } else {
+            classThis.groundwater.isFetched = true
+        }
+
+        if (!doesDataExist('water', 'shapes')){
+            Promise.all([this.fetchDemandUnitShapes(), this.fetchGroundwaterShapes()]).then(function(response: AxiosResponse<any>[]){
+                response[0].data.features = response[0].data.features.filter( d => {
+                    return d.properties['DU_ID'] != null
+                })
+                let shapes = {
+                    'demand_units': response[0].data,
+                    'groundwater': response[1].data
+                }
+                useDataStore().updateData('water', shapes, 'shapes', 'water')
+                classThis.shapes.isFetched = true
+            })
+        } else {
+            classThis.shapes.isFetched = true
+        }
+
+    }
+
+    fetchUnmetdemand(){
+        const queryEPBaseline = "http://infovis.cs.ucdavis.edu/geospatial/api/data/baseline_unmetdemand"
+        const queryEPScenario = "http://infovis.cs.ucdavis.edu/geospatial/api/data/bl_h000_unmetdemand"
+        return [
+            axios.get(queryEPBaseline, config),
+            axios.get(queryEPScenario, config),
+        ]
+    }
+
+    fetchGroundwater(){
+        const queryEPBaseline = "http://infovis.cs.ucdavis.edu/geospatial/api/data/baseline_groundwater"
+        const queryEPScenario = "http://infovis.cs.ucdavis.edu/geospatial/api/data/bl_h000_groundwater"
+        return [
+            axios.get(queryEPBaseline, config),
+            axios.get(queryEPScenario, config),
+        ]
+    }
+
+    fetchDemandUnitShapes(){
+        const queryEP = "http://infovis.cs.ucdavis.edu/geospatial/api/shapes/demand_units"
+        return axios.get(queryEP, config)
+    }
+
+    fetchGroundwaterShapes(){
+        const queryEP = "http://infovis.cs.ucdavis.edu/geospatial/api/shapes/groundwater"
+        return axios.get(queryEP, config)
     }
 }
 
