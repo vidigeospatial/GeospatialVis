@@ -96,7 +96,7 @@ def get_data(target):
 
 @app.route("/data/scenario/<target_scenario>/<target_data>")
 def get_data_scenario(target_scenario, target_data):
-    if target_scenario not in ['CS3_BL','bl_h000', 'LTO_BA_EXP1_2022MED', 'CS3_ALT3_2022med_L2020ADV']:
+    if target_scenario not in ['CS3_BL','bl_h000', 'LTO_BA_EXP1_2022MED', 'CS3_ALT3_2022med_L2020ADV', 'CS3_ALT3_2040MED_COEQ20230821_L2020DV', 'CS3_NAA_2022MED_071923_L2020ADV', 'CS3_NAA_2040MED_COEQ20230818_L2020ADV']:
         return Response(
             "Invalid target scenario",
             status=400
