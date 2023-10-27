@@ -24,12 +24,12 @@ def hello_world():
 def test():
     print("In test")# Get the path of current working directory 
     path = os.getcwd() 
-    
+
     # Get the list of all files and directories 
     # in current working directory 
     dir_list = os.listdir(path) 
-    
-    
+
+
     print("Files and directories in '", path, "' :")  
     # print the list 
     print(dir_list)
@@ -89,26 +89,32 @@ def get_data(target):
         ret = result_df.to_json()
     else:
         return Response(
-            "Invalid data request",
-            status=400
-        )
+                "Invalid data request",
+                status=400
+                )
     return ret
+
+
 
 @app.route("/data/scenario/<target_scenario>/<target_data>")
 def get_data_scenario(target_scenario, target_data):
     if target_scenario not in ['CS3_BL','bl_h000', 'LTO_BA_EXP1_2022MED', 'CS3_ALT3_2022med_L2020ADV', 'CS3_ALT3_2040MED_COEQ20230821_L2020DV', 'CS3_NAA_2022MED_071923_L2020ADV', 'CS3_NAA_2040MED_COEQ20230818_L2020ADV']:
         return Response(
-            "Invalid target scenario",
-            status=400
-        )
+                "Invalid target scenario",
+                status=400
+                )
     elif target_data not in ['unmetdemand']:
         return Response(
-            "Invalid target data",
-            status=400
-        )
+                "Invalid target data",
+                status=400
+                )
     else:
         df = pd.read_csv(f'{proj_path}/data/{target_scenario}_DemandDeliveries.csv').iloc[:, 1:]
-        print(df)
+        if target_scenario not in ['CS3_BL', 'bl_h000']:
+            # 1 cfs will produce 724 acre-feet of water per year.	
+            # So multiplier is 724 / 12 / 1000 = 0.060333333
+            df = df.applymap(lambda x: x * 0.0603333)
+        # print(df)
         result_df = pd.DataFrame()
         # Is a hack, need to standardize this
         col_per_group = 3 if 'dgTotVar' in df.columns[2] else 2
@@ -121,6 +127,7 @@ def get_data_scenario(target_scenario, target_data):
             mask = group.iloc[:, -1] == -902
             unmet_demand[mask] = 0
             result_df[new_col_name] = unmet_demand
+        
         ret = result_df.to_json()
     return ret
 
@@ -134,7 +141,7 @@ def get_shape_GeoJson(target):
             data = json.load(f)
     else:
         return Response(
-            "Invalid shape request",
-            status=400
-        )
+                "Invalid shape request",
+                status=400
+                )
     return data
