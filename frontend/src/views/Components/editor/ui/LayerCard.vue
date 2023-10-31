@@ -40,6 +40,7 @@ function getImgURL(imageName) {
 .layerCard {
     display: inline-block;
     width: 20%;
+    overflow-wrap: break-word;
 }
 
 </style>

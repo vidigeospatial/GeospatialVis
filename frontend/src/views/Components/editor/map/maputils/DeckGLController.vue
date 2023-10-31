@@ -238,7 +238,7 @@ function buildTimeScale() {
     d3.selectAll(".axis text")
         .style("stroke", "black")
         .style("fill", "black")
-        .style("font-size", "0.75rem")
+        .style("font-size", "1.5rem")
     d3.selectAll(".axis path")
         .style("stroke", "black")
 
@@ -260,6 +260,7 @@ function drawAllLayers() {
         showAnnotations,
         curAnnotationsProps
     )
+    console.log(layerList)
     deck.setProps({ layers: [...layerList] })
 }
 

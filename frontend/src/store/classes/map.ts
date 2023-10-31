@@ -286,7 +286,7 @@ export class Water implements MapState.WaterData{
 
     shapes: MapState.DBData
 
-    // In store -> { 'unmetdemand': { 'baseline' : [], 'scenario': [] }}
+    // In store -> { 'unmetdemand': { scenario_name: data ...}}
 
     currentTime: number
 
@@ -306,10 +306,17 @@ export class Water implements MapState.WaterData{
 
         if (!doesDataExist('water', 'unmetdemand')){
             Promise.all(this.fetchUnmetdemand()).then(function(response: AxiosResponse<any>[]){
-                let unmetDemand = {
-                    'baseline': response[0].data,
-                    'scenario': response[1].data
-                }
+                let scenarios = [
+                    'CS3_BL',
+                    'bl_h000', 
+                    'LTO_BA_EXP1_2022MED', 
+                    'CS3_ALT3_2022med_L2020ADV', 
+                    'CS3_ALT3_2040MED_COEQ20230821_L2020DV', 
+                    'CS3_NAA_2022MED_071923_L2020ADV', 
+                    'CS3_NAA_2040MED_COEQ20230818_L2020ADV'
+                ]
+                let unmetDemand = {}
+                response.forEach( (item, index) => unmetDemand[scenarios[index]] = item.data)
                 useDataStore().updateData('water', unmetDemand, 'unmetdemand', 'water')
                 classThis.unmetdemand.isFetched = true
             })
@@ -349,12 +356,19 @@ export class Water implements MapState.WaterData{
     }
 
     fetchUnmetdemand(){
-        const queryEPBaseline = "http://infovis.cs.ucdavis.edu/geospatial/api/data/baseline_unmetdemand"
-        const queryEPScenario = "http://infovis.cs.ucdavis.edu/geospatial/api/data/bl_h000_unmetdemand"
-        return [
-            axios.get(queryEPBaseline, config),
-            axios.get(queryEPScenario, config),
+        let scenarios = [
+            'CS3_BL',
+            'bl_h000', 
+            'LTO_BA_EXP1_2022MED', 
+            'CS3_ALT3_2022med_L2020ADV', 
+            'CS3_ALT3_2040MED_COEQ20230821_L2020DV', 
+            'CS3_NAA_2022MED_071923_L2020ADV', 
+            'CS3_NAA_2040MED_COEQ20230818_L2020ADV'
         ]
+        return scenarios.map( scenario => {
+            const queryEP = `http://infovis.cs.ucdavis.edu/geospatial/api/data/scenario/${scenario}/unmetdemand`
+            return axios.get(queryEP, config)
+        })
     }
 
     fetchGroundwater(){

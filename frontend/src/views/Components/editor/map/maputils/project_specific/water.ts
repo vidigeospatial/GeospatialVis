@@ -1,5 +1,5 @@
 import { MapState } from '@/types/mapTypes'
-import axios, { AxiosResponse } from "axios";
+import axios, { AxiosResponse } from "axios"
 import type { Coords, LayerProp, InfoPanelProps, MapParamsType } from '@/types/mapTypes'
 import type { LayersList, MapViewState, Layer } from '@deck.gl/core/typed'
 import { 
@@ -40,6 +40,15 @@ import { IContentManager } from './project_specific.interface'
 // import comparisonUnmet from '@/assets/data/comparison_unmetdemand.json'
 // import differenceUnmet from '@/assets/data/difference_unmetdemand.json'
 // import baselineGroundwater from '@/assets/data/baseline_groundwater.json'
+const  scenarios = [
+    'CS3_BL',
+    'bl_h000', 
+    'LTO_BA_EXP1_2022MED', 
+    'CS3_ALT3_2022med_L2020ADV', 
+    'CS3_ALT3_2040MED_COEQ20230821_L2020DV', 
+    'CS3_NAA_2022MED_071923_L2020ADV', 
+    'CS3_NAA_2040MED_COEQ20230818_L2020ADV'
+]
 
 export default class WaterContentManager implements IContentManager {
     useDataStore: any
@@ -93,121 +102,42 @@ export default class WaterContentManager implements IContentManager {
         let unmetdemand = this.useDataStore.getData('water', 'unmetdemand')
         let groundwater = this.useDataStore.getData('water', 'groundwater')
         let shapes = this.useDataStore.getData('water', 'shapes')
-        shapes['demand_units'].features = shapes['demand_units'].features.filter(d => d.properties.DU_ID in unmetdemand['baseline'])
+        // shapes['demand_units'].features = shapes['demand_units'].features.filter(d => d.properties.DU_ID in unmetdemand['baseline'])
 
-        let baseline_unmetdemand = shapes['demand_units'].features.map ( d => {
-            return {
-                ...d,
-                properties: {
-                    unmetDemand: Object.values(unmetdemand['baseline'][d.properties.DU_ID])
-                }
-            }   
+        scenarios.forEach(scenario => {
+            let curUnmetdemand = unmetdemand[scenario]
+            let unmetDemandObject = shapes['demand_units'].features
+                .filter(d => d.properties.DU_ID in curUnmetdemand)
+                .map( d => ({
+                    ...d,
+                    properties: {
+                        unmetDemand: Object.values(curUnmetdemand[d.properties.DU_ID])
+                    }
+                }))
+            let unmetDemandDifferenceObject = shapes['demand_units'].features
+                .filter(d => d.properties.DU_ID in curUnmetdemand && d.properties.DU_ID in unmetdemand['CS3_BL'])
+                .map( d => {
+                    let baseline: number[] = Object.values(unmetdemand['CS3_BL'][d.properties.DU_ID])
+                    return {
+                        ...d,
+                        properties: {
+                            difference: Object.values(curUnmetdemand[d.properties.DU_ID]).map(
+                                (element: number, index: number) => element - baseline[index]
+                            )
+                        }
+                    }
+                })
+            this.data[scenario] = unmetDemandObject
+            this.data[scenario + '_difference'] = unmetDemandDifferenceObject
         })
-        let scenario_unmetdemand = shapes['demand_units'].features.map ( d => {
-            return {
-                ...d,
-                properties: {
-                    unmetDemand: Object.values(unmetdemand['scenario'][d.properties.DU_ID])
-                }
-            }   
-        })
-        let comparison_unmetdemand = shapes['demand_units'].features.map ( d => {
-            let baseline: number[] = Object.values(unmetdemand['baseline'][d.properties.DU_ID])
-            return {
-                ...d,
-                properties: {
-                    difference: Object.values(unmetdemand['scenario'][d.properties.DU_ID]).map(
-                        (element: number, index: number) => element - baseline[index]
-                    )
-                }
-            }   
-        })
-        let baseline_groundwater = shapes['groundwater'].features.map ( d => {
-            return {
-                ...d,
-                properties: {
-                    groundwater: Object.values(groundwater['baseline'][d.properties.elem_id])
-                }
-            }   
+        let baselineGroundwater = shapes['groundwater'].features.map ( d => ({
+            ...d,
+            properties: {
+                groundwater: Object.values(groundwater['baseline'][d.properties.elem_id])
+            }
+        }))
 
-        })
-
-
-        // unmetdemand.forEach(
-        //     (d: any) => {
-        //         let parsed = JSON.parse(d[1200])
-    
-        //         featureCollectionBaseline.features.push({
-        //             type: 'Feature',
-        //             properties: {
-        //                 unmetDemand: Object.values(d).slice(0, 1200),
-        //             },
-        //             geometry: {
-        //                 type: parsed.type,
-        //                 coordinates: parsed.coordinates
-        //             }
-        //         })
-    
-        //     }
-        // )
-    
-        // comparisonUnmet.forEach(
-        //     (d: any) => {
-        //         let parsed = JSON.parse(d[1200])
-    
-        //         featureCollectionComparison.features.push({
-        //             type: 'Feature',
-        //             properties: {
-        //                 unmetDemand: Object.values(d).slice(0, 1200),
-        //             },
-        //             geometry: {
-        //                 type: parsed.type,
-        //                 coordinates: parsed.coordinates
-        //             }
-        //         })
-        //     }
-        // )
-    
-        // differenceUnmet.forEach(
-        //     (d: any) => {
-        //         let parsed = JSON.parse(d[1200])
-    
-        //         featureCollectionDifference.features.push({
-        //             type: 'feature',
-        //             properties: {
-        //                 difference: Object.values(d).slice(0, 1200),
-        //             },
-        //             geometry: {
-        //                 type: parsed.type,
-        //                 coordinates: parsed.coordinates
-        //             }
-        //         })
-    
-        //     }
-        // )
-
-        // baselineGroundwater.forEach(
-        //     (d: any) => {
-        //         let parsed = JSON.parse(d[1200])
-    
-        //         featureCollectionBaselineGroundwater.features.push({
-        //             type: 'feature',
-        //             properties: {
-        //                 groundwater: Object.values(d).slice(0, 1200),
-        //             },
-        //             geometry: {
-        //                 type: parsed.type,
-        //                 coordinates: parsed.coordinates
-        //             }
-        //         })
-    
-        //     }
-        // )
-
-        this.data['baseline'] = baseline_unmetdemand
-        this.data['comparison'] = scenario_unmetdemand
-        this.data['difference'] = comparison_unmetdemand
-        this.data['baselineGroundwater'] = baseline_groundwater
+        this.data['baselineGroundwater'] = baselineGroundwater
     }
 
     getAllStaticLayers(layerDescription: MapState.Layer<any>[]): LayersList {
@@ -294,7 +224,6 @@ export default class WaterContentManager implements IContentManager {
             }
         })
 
-
         const colorInterp = (unmetDemand) => interpolateReds(
             scaleLinear().domain([-250, 10]).range([1, 0])(unmetDemand)
         ).replace(/[^\d,]/g, '').split(',').map(d => Number(d))
@@ -306,55 +235,46 @@ export default class WaterContentManager implements IContentManager {
         const colorInterpDifference = (unmetDemand) => interpolatePRGn(
             scaleLinear().domain([-50, 50]).range([0, 1])(unmetDemand)
         ).replace(/[^\d,]/g, '').split(',').map(d => Number(d))
-
-
-
+        
         let index = Math.round(currentTime * 1200)
-        let layerBaseline = new GeoJsonLayer({
-            id: 'Baseline',
-            data: this.data['baseline'],
-            filled: true,
-            extruded: false,
-            pickable: true,
-            getFillColor: d => colorInterp(d.properties.unmetDemand[index]),
-            // getFillColor: [255, 255, 255, 255],
-            getLineColor: [0, 0, 0, 255],
-            getLineWidth: 100,
-            opacity: 0.5,
-            updateTriggers: {
-                getFillColor: currentTime
-            }
-        })
+        scenarios.forEach(scenario => {
+            if (animatedLayerDescription.includes(`${scenario} deliveries`)){
+                console.log(this.data[scenario][0].properties.unmetDemand[0])
+                let layer = new GeoJsonLayer({
+                    id: `${scenario}_raw`,
+                    data: this.data[scenario],
+                    filled: true,
+                    extruded: false,
+                    pickable: true,
+                    getFillColor: d => colorInterp(d.properties.unmetDemand[index]),
+                    // getFillColor: [255, 255, 255, 255],
+                    getLineColor: [0, 0, 0, 255],
+                    getLineWidth: 100,
+                    opacity: 0.5,
+                    updateTriggers: {
+                        getFillColor: currentTime
+                    }
+                })
 
-        let layerComparison = new GeoJsonLayer({
-            id: 'Comparison',
-            data: this.data['comparison'],
-            filled: true,
-            extruded: false,
-            pickable: true,
-            getFillColor: d => colorInterp(d.properties.unmetDemand[index]),
-            // getFillColor: [255, 255, 255, 255],
-            getLineColor: [0, 0, 0, 255],
-            getLineWidth: 100,
-            opacity: 0.5,
-            updateTriggers: {
-                getFillColor: currentTime
-            }
-        })
+                let layerDifference = new GeoJsonLayer({
+                    id: `${scenario}_difference`,
+                    data: this.data[`${scenario}_difference`],
+                    filled: true,
+                    extruded: false,
+                    pickable: true,
+                    getFillColor: d => colorInterpDifference(d.properties.difference[index]),
+                    // getFillColor: [255, 255, 255, 255],
+                    getLineColor: [0, 0, 0, 255],
+                    getLineWidth: 100,
+                    opacity: 0.5,
+                    visibile: false,
+                    updateTriggers: {
+                        getFillColor: currentTime
+                    }
+                })
+                animatedLayerList.push(layer)
+                animatedLayerList.push(layerDifference)
 
-        let layerDifference = new GeoJsonLayer({
-            id: 'Difference',
-            data: this.data['difference'],
-            filled: true,
-            extruded: false,
-            pickable: true,
-            // getFillColor: d => colorInterpDifference(d.properties.difference[index]),
-            getFillColor: [255, 255, 255, 255],
-            getLineColor: [0, 0, 0, 255],
-            getLineWidth: 100,
-            opacity: 0.5,
-            updateTriggers: {
-                getFillColor: currentTime
             }
         })
 
@@ -375,15 +295,15 @@ export default class WaterContentManager implements IContentManager {
         })
         // let curLayerList = layerList.concat([layerBaseline])
         // console.log(animatedLayerDescription)
-        if (animatedLayerDescription.includes('Baseline deliveries')) {
-            animatedLayerList.push(layerBaseline)
-        }
-        if (animatedLayerDescription.includes('bl_h000 deliveries')) {
-            animatedLayerList.push(layerComparison)
-        }
-        if (animatedLayerDescription.includes('Difference in deliveries (bl_h000 - baseline)')) {
-            animatedLayerList.push(layerDifference)
-        }
+        // if (animatedLayerDescription.includes('Baseline deliveries')) {
+        //     animatedLayerList.push(layerBaseline)
+        // }
+        // if (animatedLayerDescription.includes('bl_h000 deliveries')) {
+        //     animatedLayerList.push(layerComparison)
+        // }
+        // if (animatedLayerDescription.includes('Difference in deliveries (bl_h000 - baseline)')) {
+        //     animatedLayerList.push(layerDifference)
+        // }
         if (animatedLayerDescription.includes('Baseline GW deliveries')) {
             animatedLayerList.push(layerBaselineGroundwater)
         }
@@ -430,6 +350,13 @@ export default class WaterContentManager implements IContentManager {
         showAnnotations: Ref<boolean>,
         curAnnotationsProps: Ref<MapState.annotationData>
     ): LayersList {
+        if (settings['Compare_Baseline']){
+            layers = layers.map(d => d.id.includes("difference") ? d.clone({ visible: true }) : d)
+            layers = layers.map(d => d.id.includes("raw") ? d.clone({ visible: false }) : d)
+        } else {
+            layers = layers.map(d => d.id.includes("difference") ? d.clone({ visible: false }) : d)
+            layers = layers.map(d => d.id.includes("raw") ? d.clone({ visible: true }) : d)
+        }
         // If annoatations are showing, change the icon atlas (i.e. the image)
         if (showAnnotations.value == true)
             layers = layers.map(d => d.id == curAnnotationsProps.value.id.toString() ? d.clone({ iconAtlas: 'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/icon-atlas.png' }) : d)
@@ -463,7 +390,11 @@ export default class WaterContentManager implements IContentManager {
         return [ scale, timeYear.every(5), "%Y" ]
     }
     formatTimeString(date: Date): string {
-        return `${date.toLocaleString('default', { month: 'short' })} ${date.getFullYear()}`
+        const start = new Date('10/31/1921')
+        // Account for leap years
+        const msYear = 31557600000 
+        return `Year ${Math.round((date - start) / msYear)}`
+        // return `${date.toLocaleString('default', { month: 'short' })} ${date.getFullYear()}`
     }
     getInfoPanelSettings(): InfoPanelProps.Settings[] {
         return InfoPanelSettings

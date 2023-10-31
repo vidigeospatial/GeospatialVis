@@ -1,13 +1,11 @@
 [
     {
         "icon": "water-tap",
-        "name": "Baseline deliveries",
+        "name": "CS3_BL deliveries",
         "visibility": true,
         "type": "GeoJSON",
         "parameters": {
-            "source": "wmts",
-            "data": "fbfm40",
-            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/fbfm40/webmercator"
+            "source": "wmts"
         },
         "id": 0,
         "description": "",
@@ -19,20 +17,69 @@
         "visibility": false,
         "type": "GeoJSON",
         "parameters":{
-           "source": "wmts",
-           "data": "aspect",
-            "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/aspect/webmercator"
+           "source": "bl_h000"
         },
         "id": 1,
         "description": "",
         "animated": true
     },
     {
-        "icon":"road-sign",
-        "name": "Difference in deliveries (bl_h000 - baseline)",
+        "icon":"water-tap",
+        "name": "LTO_BA_EXP1_2022MED deliveries",
         "visibility": false,
         "type": "GeoJSON",
+        "parameters":{
+           "source": "LT0_BA_EXP1_2022MED"
+        },
         "id": 2,
+        "description": "",
+        "animated": true
+    },
+    {
+        "icon":"water-tap",
+        "name": "CS3_ALT3_2040MED_COEQ20230821_L2020DV deliveries",
+        "visibility": false,
+        "type": "GeoJSON",
+        "parameters":{
+           "source": "CS3_ALT3_2040MED_COEQ20230821_L2020DV"
+        },
+        "id": 3,
+        "description": "",
+        "animated": true
+    },
+    {
+        "icon":"water-tap",
+        "name": "CS3_NAA_2022MED_071923_L2020ADV deliveries",
+        "visibility": false,
+        "type": "GeoJSON",
+        "parameters":{
+           "source": "CS3_NAA_2022MED_071923_L2020ADV"
+        },
+        "id": 4,
+        "description": "",
+        "animated": true
+    },
+    {
+        "icon":"water-tap",
+        "name": "CS3_NAA_2040MED_COEQ20230818_L2020ADV deliveries",
+        "visibility": false,
+        "type": "GeoJSON",
+        "parameters":{
+           "source": "CS3_NAA_2040MED_COEQ20230818_L2020ADV"
+        },
+        "id": 5,
+        "description": "",
+        "animated": true
+    },
+    {
+        "icon":"water-tap",
+        "name": "CS3_ALT3_2022med_L2020ADV deliveries",
+        "visibility": false,
+        "type": "GeoJSON",
+        "parameters":{
+           "source": "CS3_ALT3_2022med_L2020ADV"
+        },
+        "id": 5,
         "description": "",
         "animated": true
     },
@@ -40,13 +87,13 @@
         "icon": "perimeter",
         "name": "Baseline GW deliveries",
         "visibility": false,
-        "type": "GeoJSon",
+        "type": "GeoJSON",
         "parameters": {
             "source": "wmts",
             "data": "fbfm40",
             "url": "http://infovis.cs.ucdavis.edu/mapProxy/wmts/fbfm40/webmercator"
         },
-        "id": 0,
+        "id": 6,
         "description": "",
         "animated": true
     }
